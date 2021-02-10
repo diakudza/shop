@@ -1,0 +1,151 @@
+
+.offer{
+  padding-top: 65px;
+  
+  
+}
+.offer-top{
+   display: flex;
+   justify-content: space-between;
+}
+.offer-card{
+   width: 360px;
+   height: 260px;
+
+}
+
+.offer-card-img{
+   /*filter: alpha(Opacity=50);
+   opacity: 0.3; */
+   width: 100%;
+}
+.offer-card-img-text{
+	position: absolute;
+	left: 50%;
+	top:50%;
+}
+.offer-card_bottom{
+   margin-top: 30px;
+   width: 100%;
+   height: 180px;
+   background-image: url(../img/4-ACCESORIES.png);
+   background-position: center;
+}
+.product{
+   margin-top: 96px;
+   padding-bottom: 95px;
+}
+.product-catalog{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-bottom: 95px;
+}
+
+.product-header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+	font-size: 30px;
+	line-height: 36px;
+	color: #222222;
+}
+
+
+
+.product-text{
+   
+    font-size: 14px;
+	line-height: 17px;
+
+   color: #9F9F9F;
+   margin-bottom: 48px;
+}
+
+.product-table{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   
+}
+.product-card{
+   background: #F8F8F8;
+   height: 581px;
+   width: 360px;
+   margin-bottom: 30px;
+}
+
+.product-card:hover .product-add-cover{
+   display: block;
+}
+.product-card-imgbox{
+   position: relative;
+}
+.product-card-img{
+   margin-bottom: 25px;
+}
+.product-add-cover{
+   display: none;
+}
+.product-add{
+   position: absolute;
+   height: 94%;
+   width: 100%;
+   background: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0.7;
+   top: 0px;
+   
+}
+.product-add-img{
+   opacity: 1;
+}
+.product-card-header{
+   margin-left: 18px;
+   margin-bottom: 13px;
+   
+   font-size: 13px;
+   line-height: 16px;
+   color: #000000;
+
+
+}
+.product-card-text{
+   margin-left: 16.4px;
+   margin-bottom: 18px;
+   
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #5D5D5D;
+}
+.product-card-price{
+   margin-left: 18px;
+   font-size: 16px;
+   line-height: 19px;
+   color: #F16D7F;
+}
+.product-bottom{
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 45px;
+}
+.product-button{
+   border: 1px solid #FF6A6A;
+   background: #FFFFFF;
+   text-decoration: none;
+   display: inline-block;
+   color: #F26376;
+   padding: 14.5px 38.5px 13.5px 38.5px;
+   text-align: center;
+   
+}
+.product-button:hover{
+     background: #F16D7F;
+     color: #FFFFFF;
+}
+

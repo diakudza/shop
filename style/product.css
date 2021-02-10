@@ -1,0 +1,229 @@
+.product_main{
+   position: relative;
+   
+}
+.product_main_top{
+   display: flex;
+   justify-content: space-between;
+   background-color: #F7F7F7;
+   align-items: center;
+   border: 1px solid #EAEAEA;
+}
+.product_main_img{
+   background-image: url(img/product_main_img.png);
+width: 597px;
+height: 724px;
+background-repeat: no-repeat;
+}
+
+.product_main_box{
+   background-color: #2a2a2a15 ;
+   width: 47px;
+   height: 47px;
+   display: flex;
+   justify-content: center;
+   box-sizing: border-box;
+    padding-top: 10px;
+}
+.product_main_bottom{
+   position: absolute;
+   width: 1140px;
+   height: 601px;
+   top: 690px;
+   box-sizing: border-box;
+   background-color: #FFFFFF;
+   border: 1px solid #EAEAEA;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   padding-top: 64px;
+   align-items: center;
+   padding-bottom: 65px;
+}
+
+.product_main_text{
+   height: 51px;
+   width: 555px;
+   font-family: Lato;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   text-align: center;
+   color: #5E5E5E;
+   margin-bottom: 32.5px;
+}
+.product_main_bottom h4{
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #F16D7F;
+}
+.product_main_bottom h3{
+   font-weight: 300;
+   font-size: 18px;
+   line-height: 22px;
+   color: #4D4D4D;
+   margin-bottom: 48.4px;
+}
+
+.product_main_bottom h2{
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 29px;
+   color: #EF5B70;
+}
+.product_main_box img{
+ width: 12px;
+ height: 21px;
+}
+.red_line_hor{
+   width: 63px;
+   height: 3px;
+   background-color: #EF5B70;
+   
+  
+}
+.red_line_hor_long{
+   width: 642px;
+   height: 1px;
+   background-color: #EF5B70;
+   margin-top: 65.5px;
+   margin-bottom: 65.5px;
+}
+.product{
+   margin-top: 96px;
+   padding-bottom: 95px;
+}
+.product-catalog{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-bottom: 95px;
+}
+
+.product-header{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+	font-size: 30px;
+	line-height: 36px;
+	color: #222222;
+}
+.product-header-catalog{
+   display: flex;
+   height: 134px;
+   align-items: center;
+}
+
+.product-text{
+   
+    font-size: 14px;
+	line-height: 17px;
+
+   color: #9F9F9F;
+   margin-bottom: 48px;
+}
+
+.product-table{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 664px;
+}
+.product-card{
+   background: #F8F8F8;
+   height: 581px;
+   width: 360px;
+   margin-bottom: 128px;
+}
+
+.product-card:hover .product-add-cover{
+   display: block;
+}
+.product-card-imgbox{
+   position: relative;
+}
+.product-card-img{
+   margin-bottom: 25px;
+}
+.product-add-cover{
+   display: none;
+}
+.product-add{
+   position: absolute;
+   height: 94%;
+   width: 100%;
+   background: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 0.7;
+   top: 0px;
+   
+}
+.product-add-img{
+   opacity: 1;
+}
+.product-card-header{
+   margin-left: 18px;
+   margin-bottom: 13px;
+   
+   font-size: 13px;
+   line-height: 16px;
+   color: #000000;
+
+
+}
+.product-card-text{
+   margin-left: 16.4px;
+   margin-bottom: 18px;
+   
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #5D5D5D;
+}
+.product-card-price{
+   margin-left: 18px;
+   font-size: 16px;
+   line-height: 19px;
+   color: #F16D7F;
+}
+.product-bottom{
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-left: 20px;
+
+}
+.product-button{
+   border: 1px solid #FF6A6A;
+   background: #FFFFFF;
+   text-decoration: none;
+   display: inline-block;
+   color: #F26376;
+   padding: 14.5px 38.5px 13.5px 38.5px;
+   text-align: center;
+   height: 48px;
+   width: 212px;
+   box-sizing: border-box;
+}
+.product-button:hover{
+     background: #F16D7F;
+     color: #FFFFFF;
+}
+
+.catalog-menu{
+   display: flex;
+   margin-bottom: 48px;
+}
+.catalog-menu-it{
+   font-size: 14px;
+   line-height: 17px;
+   color: #6F6E6E;
+   margin-right: 28px;
+}
