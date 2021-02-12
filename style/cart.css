@@ -140,3 +140,7 @@ line-height: 19px;
 
 color: #FFFFFF;
 }
+.cart_close:active .cart_card{
+   display: hide;
+   
+}
