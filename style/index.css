@@ -1,7 +1,8 @@
 
 .offer{
   padding-top: 65px;
-  
+  margin-left: 16px;
+  margin-right: 16px;
   
 }
 .offer-top{
@@ -9,8 +10,8 @@
    justify-content: space-between;
 }
 .offer-card{
-   width: 360px;
-   height: 260px;
+   width: 232px;
+   height: 167px;
 
 }
 
@@ -73,7 +74,7 @@
    background: #F8F8F8;
    height: 581px;
    width: 360px;
-   margin-bottom: 30px;
+   margin-bottom: 40px;
 }
 
 .product-card:hover .product-add-cover{
@@ -148,4 +149,3 @@
      background: #F16D7F;
      color: #FFFFFF;
 }
-
