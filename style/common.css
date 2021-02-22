@@ -154,16 +154,27 @@ box-sizing: border-box;
    align-items: center;
    margin: 0 0 81px 68px;
 }
-
+/*
 .img-text{
 width: 377px;
    
+}*/
+.main-text_text{
+   font-weight: 900;
+   font-size: 48px;
+   line-height: 58px;
 }
-.img-text-img{
-  width: 100%;
-  height: 100%;
+.main-text_text h4{
+   font-weight: 700;
+   font-size: 32px;
+   
 }
-.red-line{
+.main-text_text h4 span{
+   color:#F16D7F;
+   
+}
+
+.main-text_red-line{
    background-color: #F16D7F;
    height: 92px;
    width: 12px;
@@ -510,7 +521,7 @@ line-height: 19px;
       height: 363px;
       margin: 0 2px 8px 0;
    }
-   .red-line{
+   .main-text_red-line{
       height: 61px;
    }
    .img-text{
