@@ -89,9 +89,16 @@ body{
    background-image: url(../img/header-cart.svg);
    width:32px;
    height: 29px; 
+   position: relative;
 }
 
-.menu-right:hover  #menu-vertical{
+.menu-right-lebel{
+   position: absolute;
+   left: 24px;
+   top: -7px;
+   width: 19px;
+}
+.menu-right:hover  .menu-vertical{
    
    display: block;
 }
