@@ -47,6 +47,22 @@ body{
 .menu-left li{
    margin-right: 41px;
 }
+.menu-left li:first-child{
+   background-image: url(../img/nav_logo.png);
+   width: 44px;
+    height: 38px;
+}
+.menu-left li:last-child{
+   background-image: url(../img/header-find.svg);
+   width: 26px;
+   height: 26px;
+}
+.top-li-link{
+   width: 100%;
+   height: 100%;
+   display: block;
+  
+}
 .menu-right{
    display: flex;
    position: relative;
@@ -55,6 +71,24 @@ body{
 }
 .menu-right li{
    margin-left: 33px;
+   
+}
+.menu-right > li:first-child{
+   background-image: url(../img/header-menu.svg);
+   width:32px;
+   height: 23px; 
+}
+
+.menu-right > li:nth-child(2){
+   background-image: url(../img/header-reg.svg);
+   width:29px;
+   height: 29px; 
+}
+
+.menu-right > li:nth-child(3){
+   background-image: url(../img/header-cart.svg);
+   width:32px;
+   height: 29px; 
 }
 
 .menu-right:hover  #menu-vertical{
@@ -67,10 +101,11 @@ body{
   margin-bottom:12px;
   height: 12px;
   width: 12px;
+  background-image: url(../img/close.png);
 }
 .menu-close:active  #menu-vertical{
    
-   display: hide;
+   display: none;
 }
 a:visited{
   color: #6F6E6E
@@ -95,7 +130,7 @@ a:visited{
    top: 75px;
    right: -231px;
    width: 1600px;
-   height: 768px;
+   height: 765px;
    position: absolute;
    display: none;
    z-index: 1;
@@ -108,10 +143,12 @@ a:visited{
 .menu-vertical-list li ul li{
    margin-left:  20px;
    margin-top: 12px;
+  
 }
 .menu-vertical-list li{
    
    margin-top: 20px;
+  
 }
 
 .menu-vertical a{

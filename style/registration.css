@@ -10,6 +10,9 @@
    margin-right: 230px;
    margin-left: 129px;
    padding-top: 10px;
+   font-weight: 300;
+   font-size: 24px;
+   line-height: 29px;
 }
 .left_column{
    display: flex;
@@ -143,10 +146,8 @@ input[type="radio"]{
    line-height: 29px;
    color: #000000;
 }
-.right_column h4, li {
-   font-weight: 300;
-   font-size: 24px;
-   line-height: 29px;
+.right_column h4 {
+   
    margin-bottom: 16px;
 }
 
@@ -158,4 +159,5 @@ input[type="radio"]{
 }
 .right_column li{
    list-style-image: url(../img/check.png);
+   margin-bottom: 16px;
 }

@@ -196,6 +196,9 @@
   flex-direction: column;
   margin-top: 45px;
 }
+.product-bottom a{
+   color: #F16D7F;
+}
 .product-button{
    border: 1px solid #FF6A6A;
    background: #FFFFFF;
@@ -206,6 +209,7 @@
    text-align: center;
    
 }
+
 .product-button:hover{
      background: #F16D7F;
      color: #FFFFFF;

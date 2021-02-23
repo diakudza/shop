@@ -1,5 +1,11 @@
+.main-catalog-header-right ul li{
+   display: inline-table;
 
+}
+.main-catalog-header-right ul li:last-child{
+   color: #F16D7F;
 
+}
 .offer{
   padding-top: 65px;
   
