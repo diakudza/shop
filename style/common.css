@@ -74,19 +74,19 @@ body{
    
 }
 .menu-right > li:first-child{
-   background-image: url(../img/header-menu.svg);
+   background-image: url(/img/header-menu.svg);
    width:32px;
    height: 23px; 
 }
 
 .menu-right > li:nth-child(2){
-   background-image: url(../img/header-reg.svg);
+   background-image: url(/img/header-reg.svg);
    width:29px;
    height: 29px; 
 }
 
 .menu-right > li:nth-child(3){
-   background-image: url(../img/header-cart.svg);
+   background-image: url(/img/header-cart.svg);
    width:32px;
    height: 29px; 
    position: relative;
@@ -108,7 +108,7 @@ body{
   margin-bottom:12px;
   height: 12px;
   width: 12px;
-  background-image: url(../img/close.png);
+  background-image: url(/img/close.png);
 }
 .menu-close:active  #menu-vertical{
    
@@ -187,7 +187,7 @@ box-sizing: border-box;
 
 .main-img{
    background: #F1E4E6;
-   background-image: url(../img/main-img.png);
+   background-image: url(/img/main-img.png);
   
   width: 50%;
   height: 100%;
