@@ -1,3 +1,11 @@
+.main-catalog-header-right ul li{
+   display: inline-table;
+  
+}
+.main-catalog-header-right ul li:last-child{
+   color: #F16D7F;
+
+}
 .product_main{
    position: relative;
    
@@ -10,7 +18,7 @@
    border: 1px solid #EAEAEA;
 }
 .product_main_img{
-   background-image: url(img/product_main_img.png);
+   background-image: url(../img/product_main_img.png);
 width: 597px;
 height: 724px;
 background-repeat: no-repeat;

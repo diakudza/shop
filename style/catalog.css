@@ -1,6 +1,6 @@
 .main-catalog-header-right ul li{
    display: inline-table;
-
+   text-transform: uppercase;
 }
 .main-catalog-header-right ul li:last-child{
    color: #F16D7F;

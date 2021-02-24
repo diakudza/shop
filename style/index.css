@@ -14,7 +14,7 @@
    background-position: center;
    background: rgba(33, 22, 22,1);
    background-size: cover;
-   
+   text-transform: uppercase;
 }
 
 .offer-card_text{
@@ -42,6 +42,7 @@
    height: 180px;
    background-image: url(../img/offer-card_bottom.png);
    background-position: center;
+   text-transform: uppercase;
 }
 .offer-card_bottom::before{
    background-color:rgba(33, 22, 22, 0.7);
@@ -172,7 +173,7 @@
    font-size: 13px;
    line-height: 16px;
    color: #000000;
-
+   text-transform: uppercase;
 
 }
 .product-card-text{
