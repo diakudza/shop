@@ -1,3 +1,11 @@
+.main-top-catalog{
+   display: flex;
+   background-color: #F1E4E6;
+   align-items: center;
+   max-width: 1600px;
+   height: 148px;
+}
+
 .main-catalog-header-right ul li{
    display: inline-table;
    text-transform: uppercase;
@@ -6,6 +14,27 @@
    color: #F16D7F;
 
 }
+.main-catalog-header{
+   display: flex;
+   justify-content: space-between;
+   height: 100%;
+   width: 1140px;
+   align-items: center;
+   }
+   .main-catalog-header-left{
+      font-size: 24px;
+      line-height: 29px;
+      color: #F16D7F;
+   }
+   .main-catalog-header-right{
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 17px;
+   color: #636363;
+   }
+   .img-catalog-it{
+      margin-left: 10px;
+   }
 .offer{
   padding-top: 65px;
   
