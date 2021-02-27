@@ -85,14 +85,14 @@ body{
    width: 44px;
    height: 38px;
 }
-.nav__logo--find{
+.nav__logo-find{
    background-image: url(../img/header-find.svg);
    width: 26px;
    height: 26px;
    background-size: cover; 
 
 }
-.nav__logo--find:active {
+.nav__logo-find:active {
  transform: scale(0.8);
 }
 
@@ -106,7 +106,7 @@ body{
    margin: 0 0 0 33px;
 }
 
-.menu__btngroup--menu{
+.menu__btngroup-menu{
    background-image: url(../img/header-menu.svg);
    width:32px;
    height: 23px;
@@ -125,16 +125,16 @@ body{
    position: relative;
 }
 
-.menu__btngroup--lebel{
+.menu__btngroup-lebel{
    position: absolute;
    left: 24px;
    top: -7px;
    width: 19px;
 }
-.menu__btngroup--menu:active{
+.menu__btngroup-menu:active{
    transform: scale(0.8);
 }
-.menu__btngroup--menu:active  .menu__vertical{
+.menu__btngroup-menu:active  .menu__vertical{
    display: block;
 }
 
@@ -165,12 +165,12 @@ a:visited{
    text-transform: uppercase;
 }
 
-.menu__vertical--list li ul li{
+.menu__vertical-list li ul li{
    margin: 12px 0 0 20px;
    ;
    text-transform: none;
 }
-.menu__vertical--list  li{
+.menu__vertical-list  li{
    margin: 20px 0 0 0 ;
   }
 
@@ -178,19 +178,19 @@ a:visited{
    text-decoration: none;
    color: hsl(0, 0%, 43%);
 }
-.menu__vertical--block{
+.menu__vertical-block{
    display: flex;
    flex-direction: row;
    width: 100%;
    height: 100%;
 }
-.menu__vertical--back{
+.menu__vertical-back{
    background: #000;
    height: 100%;
    opacity: 0.2;
    width: 100%;
 }
-.menu__vertical--list{
+.menu__vertical-list{
    display: flex;
    height: 100%;
    flex-direction: column;
