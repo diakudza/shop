@@ -154,7 +154,7 @@
    margin-top: 96px;
    padding-bottom: 95px;
 }
-.product-catalog{
+.product__catalog{
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -197,6 +197,9 @@
 
 .product__card:hover .product__add-cover{
    display: block;
+}
+.product__add button:active {
+   transform: scale(0.8);
 }
 .product__card-imgbox{
    position: relative;
