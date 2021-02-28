@@ -125,7 +125,7 @@ body{
    position: relative;
 }
 
-.menu__btngroup-lebel{
+.btn-group-label{
    position: absolute;
    left: 24px;
    top: -7px;
@@ -134,7 +134,7 @@ body{
 .menu__btngroup-menu:active{
    transform: scale(0.8);
 }
-.menu__btngroup-menu:active  .menu__vertical{
+.menu__btngroup-menu:active  .menu__vertical {
    display: block;
 }
 
@@ -151,7 +151,7 @@ a:visited{
    
 }
 
-.menu__vertical{
+.menu__vertical {
    top: 75px;
    right: -231px;
    width: 1600px;
