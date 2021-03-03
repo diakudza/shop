@@ -171,15 +171,11 @@
    
 }
 
-
-
 .product__header-text{
-   
-    font-size: 14px;
+   font-size: 14px;
 	line-height: 17px;
-
    color: #9F9F9F;
-   margin-bottom: 48px;
+   margin: 0 0 48px 0;
 }
 
 .product__list{

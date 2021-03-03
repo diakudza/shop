@@ -5,178 +5,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/cart.css">
     <link rel="stylesheet" href="style/cart-adaptive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header class="top ">
+    <header>
         <div class="nav container">
-            <div class="nav-panel margin container width">
+            <div class="nav__panel margin container width">
 
-                <ul class="menu-left">
-                    <li><a class="top-li-link" href="index.html" title="Main"></a></li>
-                    <li><a class="top-li-link" href="#" title="Find"></a></li>
+                <ul class="nav__logo">
+                    <li><a href="index.html" title="Main"></a></li>
+                    <li><button class="nav__logo-find" title="Find"></button></li>
                 </ul>
 
-                <ul class="menu-right">
-                    <li class="menu-right-yes">
-                        <a class="top-li-link" href="#" title="Menu"></a>
+                <ul class="menu__btngroup">
+                    <li>
+                        <button class="menu__btngroup-menu" id="menu_btn" title="Menu"></button>
+                        <NAV class="menu__vertical" id="menu__vertical">
+
+                            <div class="menu__vertical-block">
+                                <div class="menu__vertical-back"></div>
+                                <ul class="menu__vertical-list">
+                                    <div class="menu-close" id="menu-close"></div>
+                                    <span>menu</span>
+                                    <li><span>man</span>
+                                        <ul>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                            <li><a href="#">Denim</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span>woman</span>
+                                        <ul>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Jackets & Coats</a></li>
+                                            <li><a href="#">Polos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><span>kids</span>
+                                        <ul>
+                                            <li><a href="#">Accessories</a></li>
+                                            <li><a href="#">Jackets & Coats</a></li>
+                                            <li><a href="#">Polos</a></li>
+                                            <li><a href="#">T-Shirts</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Bags</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </NAV>
                     </li>
-                    <li class="menu-right-not">
-                        <a class="top-li-link" href="registration.html" title="Registation"></a>
+                    <li>
+                        <a href="registration.html" title="Registation"></a>
                     </li>
-                    <li class="menu-right-not">
-                        <a class="top-li-link" href="cart.html" title="Cart"></a>
-                        <img class="menu-right-lebel" src="img/header-cart-label.svg">
+                    <li>
+                        <a href="cart.html" title="Cart"></a>
+                        <img class="btn-group-label" height="19" src="img/header-cart-label.svg">
                     </li>
-                    <NAV class="menu-vertical">
-                        <div class="menu-vertical-block">
-                            <div class="menu-vertical-back"></div>
-                            <ul class="menu-vertical-list">
-                                <div class="menu-close"></div>
 
-                                MENU
-
-                                <li>MAN
-                                    <ul>
-                                        <li><a href="#">Accessories</a></li>
-                                        <li><a href="#">Bags</a></li>
-                                        <li><a href="#">Denim</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
-                                    </ul>
-                                </li>
-                                <li>WOMAN
-                                    <ul>
-                                        <li><a href="#">Accessories</a></li>
-                                        <li><a href="#">Jackets & Coats</a></li>
-                                        <li><a href="#">Polos</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
-                                        <li><a href="#">Shirts</a></li>
-                                    </ul>
-                                </li>
-                                <li>KIDS
-                                    <ul>
-                                        <li><a href="#">Accessories</a></li>
-                                        <li><a href="#">Jackets & Coats</a></li>
-                                        <li><a href="#">Polos</a></li>
-                                        <li><a href="#">T-Shirts</a></li>
-                                        <li><a href="#">Shirts</a></li>
-                                        <li><a href="#">Bags</a></li>
-                                    </ul>
-                                </li>
-
-
-                            </ul>
-                        </div>
-                    </NAV>
                 </ul>
-
-            </div>
-        </div>
-
-        <div class="main-top-catalog container">
-            <div class="main-catalog-header container">
-                <div class="main-catalog-header-left"> SHOPPING CART</div>
 
             </div>
         </div>
     </header>
-    <main class="white-back container">
+    <main class="white__back container">
 
-        <div class="left_column ">
-            <div class="cart_card ">
-                <img class="cart_card_img" src="img/product-card3.png">
+        <div class="cart__header container">
+            <div class="width">shopping cart</div>
+        </div>
+
+        <div class="card__column ">
+            <div class="cart__card ">
+                <img class="cart__card-img" src="img/product-card3.png">
                 <div>
-                    <h3>MANGO PEOPLE T-SHIRT</h3>
-                    <img class="cart_close" src="img/close.png">
-                    <h4>Price: $300</h4>
-                    <h4>Color: Red</h4>
-                    <h4>Size: Xl</h4>
-                    <h4>Quantity: <input type="text" placeholder="2"> </h4>
+                    <h2>mango people t-shirt</h2>
+                    <img class="cart__card-close" src="img/close.png">
+                    <h3>Price: $300</h3>
+                    <h3>Color: Red</h3>
+                    <h3>Size: Xl</h3>
+                    <h3>Quantity: <input type="text" placeholder="2"> </h3>
                 </div>
             </div>
-            <div class="cart_card ">
-                <img src="img/Image.png">
+
+            <div class="cart__card ">
+                <img class="cart__card-img" src="img/Image.png">
                 <div>
-                    <h3>MANGO PEOPLE T-SHIRT</h3>
-                    <img class="cart_close" src="img/close.png">
-                    <h4>Price: $300</h4>
-                    <h4>Color: Red</h4>
-                    <h4>Size: Xl</h4>
-                    <h4>Quantity: <input type="text" placeholder="2"> </h4>
+                    <h2>mango people t-shirt</h2>
+                    <img class="cart__card-close" src="img/close.png">
+                    <h3>Price: $300</h3>
+                    <h3>Color: Red</h3>
+                    <h3>Size: Xl</h3>
+                    <h3>Quantity: <input type="text" placeholder="2"> </h3>
                 </div>
             </div>
-            <div class="button_block">
-                <a class="product-button" href="#">CLEAR SHOPPING CART</a>
-                <a class="product-button" href="#">CONTINUE SHOPPING</a>
+            <div class="card__column-btnblock">
+                <button class="product__button" href="#">clear shopping cart</button>
+                <button class="product__button" href="#">continue shopping</button>
             </div>
         </div>
 
-        <div class="right_column">
-            <div class="right_column_text">
+        <form class="form">
+            <div class="form__text">
                 <h3>SHIPPING ADRESS</h3>
                 <input type="text" placeholder="Bangladesh">
                 <input type="text" placeholder="State">
                 <input type="text" placeholder="Postcode / Zip">
-                <a class="product-button button_get" href=" #">GET A QUOTE</a>
+                <button class="product__button form__get" href=" #">get a quote</button>
             </div>
-            <div class="right_column_bottom">
-                <h4>SUB TOTAL $900</h4>
-                <h3>GRAND TOTAL $900</h3>
-                <div class="gray_line"></div>
-                <a class="product-button button_proceed" href="#">PROCEED TO CHECKOUT</a>
+            <div class="form__checkout">
+                <h3>sub total <span>$900</span></h3>
+                <h4>grand total <span>$900</span></h4>
+                <div class="form__checkout-line"></div>
+                <a class="product__button button__proceed" href="#">proceed to checkout</a>
             </div>
-        </div>
+        </form>
+
     </main>
     <footer class="footer  container">
 
-
-        <div class="footer-middle  container">
-            <div class="footer-middle-it">
-                <img class="footer-middle-img" src="img/Intersect.png" alt="foot_foto">
-                <div class="footer-middle-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+        <section class="advantages container width">
+            <h2 class="visually-hidden">advantages</h2>
+            <div class="advantages__it">
+                <div class="advantages__it-img"></div>
+                <h4 class="advantages__it-h">Free Delivery</h4>
+                <p class="advantages__it-p">Worldwide delivery on all. Authorit tively morph next-generation
+                    innov tion with extensive models.</p>
+            </div>
+            <div class="advantages__it">
+                <div class="advantages__it-img"></div>
+                <h4 class="advantages__it-h">Sales & discounts</h4>
+                <p class="advantages__it-p"> Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+            <div class="advantages__it">
+                <div class="advantages__it-img"></div>
+                <h4 class="advantages__it-h">Quality assurance</h4>
+                <p class="advantages__it-p">Worldwide delivery on all. Authorit tively morph next-generation innov tion
+                    with extensive models.</p>
+            </div>
+        </section>
+        <section class="footer__white  container">
+            <h2 class="visually-hidden">subscripe</h2>
+            <div class="footer__white-comment">
+                <img class="footer__white-img" height="96" src="img/Intersect.png" alt="foot_foto">
+                <div class="footer__white-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
                     purus condimentum“</div>
             </div>
-            <div class="footer-middle-it-right">
-                <div class="footer-middle-sub">
-                    <div class="footer-middle-header">
-                        SUBSCRIBE
-                    </div>
-                    <div class="footer-middle-header-bot">
-                        FOR OUR NEWLETTER AND PROMOTION
-                    </div>
+            <form class="footer__form">
+                <div class="footer__form-text">
+                    <h3 class="footer__form-header">subscribe</h3>
+                    <p class="footer__form-p">for our newletter and promotion</p>
                 </div>
-                <div class="footer-middle-sub-input">
-                    <input type="text" class="footer-input" placeholder="Enter Your Email"><a href="#"
-                        class="footer-button">Subscribe</a>
+                <div class="footer__form-subscribe">
+                    <input type="text" class="footer__white-input" placeholder="Enter Your Email">
+                    <button class="footer__white-button">Subscribe</button>
                 </div>
-            </div>
-        </div>
-        <div class="footer-bottom width container">
-            <div class="footer-bottom-copy">
-                &copy; 2021 Brand All Rights Reserved.
-            </div>
-            <div class="footer-bottom-soc ">
-                <div class="footer-img-soc container">
-                    <img class="footer-img-soc-im" src="img/soc_1.png" alt="soc1">
-                </div>
-                <div class="footer-img-soc">
-                    <img class="footer-img-soc-im" src="img/soc_2.png" alt="soc1">
-                </div>
-                <div class="footer-img-soc">
-                    <img class="footer-img-soc-im" src="img/soc_3.png" alt="soc1">
-                </div>
-                <div class="footer-img-soc">
-                    <img class="footer-img-soc-im" src="img/spc_4.png" alt="soc1">
-                </div>
-            </div>
-        </div>
+            </form>
+        </section>
+        <section class="footer__copyright width container">
+            <h2 class="visually-hidden">copyright</h2>
+            <h3 class="footer__copyright-copy">&copy; 2021 Brand All Rights Reserved.</h3>
+            <ul class="footer__copyright-soc ">
+                <li class="footer__copyright-img">
+                    <a hreh="#"><img class="footer-img-soc-im" height="16" src="img/soc_1.png" alt="Facebook"></a>
+                </li>
+                <li class="footer__copyright-img">
+                    <img class="footer-img-soc-im" height="16" src="img/soc_2.png" alt="Instagram">
+                </li>
+                <li class="footer__copyright-img">
+                    <img class="footer-img-soc-im" height="16" src="img/soc_3.png" alt="Pinterest">
+                </li>
+                <li class="footer__copyright-img">
+                    <img class="footer-img-soc-im" height="16" src="img/spc_4.png" alt="Twitter">
+                </li>
+            </ul>
+        </section>
     </footer>
-
-
-
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

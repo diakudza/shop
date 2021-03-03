@@ -75,24 +75,22 @@ background-repeat: no-repeat;
    margin-bottom: 48.4px;
 }
 
-.product_main_bottom h2{
+.product_main_bottom h2 {
    font-weight: 300;
    font-size: 24px;
    line-height: 29px;
    color: #EF5B70;
 }
-.product_main_box img{
+.product_main_box img {
  width: 12px;
  height: 21px;
 }
-.red_line_hor{
+.red_line_hor {
    width: 63px;
    height: 3px;
    background-color: #EF5B70;
-   
-  
 }
-.red_line_hor_long{
+.red_line_hor_long {
    width: 642px;
    height: 1px;
    background-color: #EF5B70;
