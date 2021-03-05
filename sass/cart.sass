@@ -1,9 +1,15 @@
+@import reset
+@import variables
+@import mixins
+@import common
+
 .white__back
    display: flex
    justify-content: space-between
    padding-bottom: 128px
    flex-wrap: wrap
-
+   flex-direction: row
+   align-items: end
 .cart__header
    display: flex
    background-color: #F1E4E6
@@ -15,7 +21,7 @@
    padding: 10px 230px 10px 230px
    font-size: 24px
    line-height: 29px
-   color: #F16D7F
+   color: $dark-pink
    text-transform: uppercase
 
 .card__column
@@ -41,18 +47,18 @@
    & h2
       font-size: 24px
       line-height: 29px
-      color: #222222
-      margin-top: 22px
-      margin-bottom: 42px
+      color: $dark-blue
+      margin: 22px 0 42px 0
       text-transform: uppercase
 
-   & h3
+   & p
       font-weight: normal
       font-size: 22px
       line-height: 26px
       color: #575757
       margin-bottom: 6px
-
+   & span
+      color: $dark-pink
    &-img
       margin-right: 31px
 
