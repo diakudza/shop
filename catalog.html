@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Catalog</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/catalog.css">
-    <link rel="stylesheet" href="style/catalog-adaptive.css">
+
+    <link rel="stylesheet" href="css/catalog.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
@@ -79,8 +76,8 @@
     </header>
     <main class="white__back container">
         <section class="catalog__header container">
-            <div class="catalog__header--arrivals">NEW ARRIVALS</div>
-            <nav class="catalog__nav">
+            <span class="catalog__header--arrivals">NEW ARRIVALS</span>
+            <nav class="breadcrumbs">
                 <ul>
                     <li><a href="index.html"> home </a>/</li>
                     <li><a href="#">men </a>/</li>
@@ -126,14 +123,23 @@
 
             </div>
 
-            <div class="breadcrumbs">
-                <div class="catalog-menu-it">TRENDING NOW <img class="img-catalog-it" src="img/down.svg">
+            <div class="catalog__menu--size">
+                <div class="catalog__menu--it">trending now<img class="catalog__menu--it" src="img/down.svg">
                 </div>
-                <div class="catalog-menu-it">SIZE <img class="img-catalog-it" src="img/down.svg"></div>
-                <div class="catalog-menu-it">PRICE <img class="img-catalog-it" src="img/down.svg"></div>
+                <div class="catalog__menu--it">size
+                    <ul class="size__menu">
+                        <li><input type="checkbox">xs</li>
+                        <li><input type="checkbox">s</li>
+                        <li><input type="checkbox">m</li>
+                        <li><input type="checkbox">l</li>
+                    </ul>
+                    <img class="catalog__menu--it" src="img/down.svg">
+                </div>
+
+                <div class="catalog__menu--it">price <img class="catalog__menu--it" src="img/down.svg"></div>
             </div>
         </section>
-        <section class="product-table width container">
+        <section class="product__table width container">
             <h2 class="visually-hidden">product-catalog</h2>
             <ul class="product__list">
                 <li class="product__card">
@@ -368,7 +374,7 @@
 
         <div class="paginator">
             <div><a href="#"><img src="img/left.svg"></a></div>
-            <ul class="numbers">
+            <ul class="paginator__list">
                 <li><a href="#">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
