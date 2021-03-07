@@ -66,6 +66,53 @@ table {
   clip: rect(0 0 0 0);
 }
 
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.radio + label {
+  position: relative;
+  padding: 15px 0 0 14px;
+  cursor: pointer;
+}
+
+.radio + label:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #CDD1DA;
+  border-radius: 50%;
+  background: #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.radio + label:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #8f9488;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.radio:checked + label:after {
+  opacity: 1;
+}
+
 body {
   font-family: 'Lato';
   font-style: normal;
@@ -738,6 +785,35 @@ input:hover {
   color: #F16D7F;
 }
 
+.catalog__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 132px;
+  text-transform: uppercase;
+}
+
+.catalog__menu--size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__menu--it {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin: 0 28px 0 10px;
+}
+
 .breadcrumbs {
   font-weight: 300;
   font-size: 14px;
@@ -892,6 +968,29 @@ input:hover {
   background-color: #EF5B70;
   margin-top: 65.5px;
   margin-bottom: 65.5px;
+}
+
+.product__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+}
+
+.product__button > svg {
+  fill: #F16D7F;
+  margin: 0 10px 0 0;
+}
+
+.product__button > svg:hover > svg {
+  fill: #FFF;
 }
 
 .advantages {

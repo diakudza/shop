@@ -15,6 +15,22 @@
       font-size: 24px
       line-height: 29px
       color: #F16D7F
+.catalog__menu
+   display: flex
+   flex-direction: row
+   align-items: center
+   position: relative
+   height: 132px
+   text-transform: uppercase
+   &--size
+      display: flex
+
+   &--it
+      font-size: 14px
+      line-height: 17px
+      color: #6F6E6E
+      margin: 0 28px 0 10px
+
 .breadcrumbs
    font-weight: 300
    font-size: 14px
@@ -120,6 +136,15 @@
       background-color: #EF5B70
       margin-top: 65.5px
       margin-bottom: 65.5px
-
+.product__button
+   display: flex
+   flex-direction: row
+   align-items: center
+   font-size: 16px
+.product__button > svg
+   fill: $dark-pink
+   margin: 0 10px 0 0
+   &:hover > svg
+      fill: $white
 .advantages
    display: none
