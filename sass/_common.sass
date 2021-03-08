@@ -121,7 +121,7 @@ body
    &__logo-find:active
       transform: scale(0.8)
 
-.menu__btngroup
+.menu__btn--group
    display: flex
    position: relative
    height: 100%
@@ -129,12 +129,6 @@ body
 
    & > li
       margin: 0 0 0 33px
-
-   &-menu
-      background-image: url(../img/header-menu.svg)
-      width: 32px
-      height: 23px
-      background-size: cover
 
    & > li:nth-child(2)
       background-image: url(../img/header-reg.svg)
@@ -147,14 +141,19 @@ body
       height: 29px
       position: relative
 
+.menu__btn--button
+   background-image: url(../img/header-menu.svg)
+   width: 32px
+   height: 23px
+   background-size: cover
+
+   &:active
+      transform: scale(0.8)
 .btn-group-label
    position: absolute
    left: 24px
    top: -7px
    width: 19px
-
-.menu__btngroup-menu:active
-   transform: scale(0.8)
 
 .menu-close
    margin: 16px 16px 12px

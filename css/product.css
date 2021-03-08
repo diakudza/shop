@@ -204,7 +204,7 @@ body {
           transform: scale(0.8);
 }
 
-.menu__btngroup {
+.menu__btn--group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,28 +215,33 @@ body {
           align-items: flex-end;
 }
 
-.menu__btngroup > li {
+.menu__btn--group > li {
   margin: 0 0 0 33px;
 }
 
-.menu__btngroup-menu {
+.menu__btn--group > li:nth-child(2) {
+  background-image: url(../img/header-reg.svg);
+  width: 29px;
+  height: 29px;
+}
+
+.menu__btn--group > li:nth-child(3) {
+  background-image: url(../img/header-cart.svg);
+  width: 32px;
+  height: 29px;
+  position: relative;
+}
+
+.menu__btn--button {
   background-image: url(../img/header-menu.svg);
   width: 32px;
   height: 23px;
   background-size: cover;
 }
 
-.menu__btngroup > li:nth-child(2) {
-  background-image: url(../img/header-reg.svg);
-  width: 29px;
-  height: 29px;
-}
-
-.menu__btngroup > li:nth-child(3) {
-  background-image: url(../img/header-cart.svg);
-  width: 32px;
-  height: 29px;
-  position: relative;
+.menu__btn--button:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .btn-group-label {
@@ -244,11 +249,6 @@ body {
   left: 24px;
   top: -7px;
   width: 19px;
-}
-
-.menu__btngroup-menu:active {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
 }
 
 .menu-close {
