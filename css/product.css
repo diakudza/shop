@@ -777,6 +777,7 @@ input:hover {
   height: 148px;
   background-color: #F1E4E6;
   padding: 0 230px 0 230px;
+  text-transform: uppercase;
 }
 
 .catalog__header--arrivals {
@@ -868,10 +869,8 @@ input:hover {
 }
 
 .product__main--img {
-  background-image: url(../img/product_main_img.png);
   width: 597px;
   height: 724px;
-  background-repeat: no-repeat;
 }
 
 .product__main--box {
@@ -989,7 +988,7 @@ input:hover {
   margin: 0 10px 0 0;
 }
 
-.product__button > svg:hover > svg {
+.product__button:hover svg {
   fill: #FFF;
 }
 

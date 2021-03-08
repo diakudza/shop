@@ -11,6 +11,7 @@
    height: 148px
    background-color: #F1E4E6
    padding: 0 230px 0 230px
+   text-transform: uppercase
    &--arrivals
       font-size: 24px
       line-height: 29px
@@ -62,10 +63,9 @@
       border: 1px solid #EAEAEA
       width: 1600px
    &--img
-      background-image: url(../img/product_main_img.png)
+
       width: 597px
       height: 724px
-      background-repeat: no-repeat
 
    &--box
       background-color: #2a2a2a15
@@ -136,15 +136,19 @@
       background-color: #EF5B70
       margin-top: 65.5px
       margin-bottom: 65.5px
+
 .product__button
    display: flex
    flex-direction: row
    align-items: center
    font-size: 16px
+
 .product__button > svg
    fill: $dark-pink
    margin: 0 10px 0 0
-   &:hover > svg
-      fill: $white
+
+.product__button:hover  svg
+   fill: $white
+
 .advantages
    display: none
