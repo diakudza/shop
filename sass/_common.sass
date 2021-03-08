@@ -1,0 +1,509 @@
+@import variables
+*
+   margin: 0
+   padding: 0
+   outline: none
+   font-family: 'Lato'
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:300,400,700,900')
+
+.visually-hidden
+   position: absolute
+   width: 1px
+   height: 1px
+   margin: -1px
+   padding: 0
+   overflow: hidden
+   border: 0
+   clip: rect(0 0 0 0)
+//------------
+.radio
+   position: absolute
+   z-index: -1
+   opacity: 0
+   margin: 10px 0 0 7px
+
+.radio + label
+   position: relative
+   padding: 15px 0 0 14px
+   cursor: pointer
+
+   &:before
+      content: ''
+      position: absolute
+      top: 12px
+      left: 1px
+      width: 18px
+      height: 18px
+      border: 1px solid #CDD1DA
+      border-radius: 50%
+      background: #FFF
+      box-sizing: border-box
+   &:after
+      content: ''
+      position: absolute
+      top: 15px
+      left: 4px
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      background: #8f9488
+      box-shadow: inset 0 1px 1px rgba(0,0,0,.5)
+      opacity: 0
+      transition: .2s
+
+.radio:checked + label:after
+   opacity: 1
+
+//--------
+body
+   font-family: 'Lato'
+   font-style: normal
+   font-weight: normal
+   background: #E5E5E5
+
+.border
+   border: 1px solid black
+
+.margin
+   margin: 0 230px 0 230px
+
+.width
+   width: 1140px
+
+.container
+   margin: 0px auto
+
+.nav
+   height: 75px
+   background-color: $dark-blue
+   padding-bottom: 20px
+   box-sizing: border-box
+
+   & a
+      display: block
+      height: 100%
+
+   &__panel
+
+      display: flex
+      align-items: center
+      justify-content: space-between
+      height: 100%
+      max-width: 1140px
+
+   &__panel button
+      border: none
+      background-color: transparent
+
+   &__panel button svg
+      fill: white
+
+   &__logo
+      display: flex
+      align-items: flex-end
+      height: 100%
+
+   &__logo li
+      margin: 0 41px 0 0
+
+   &__logo li:first-child
+      background-image: url(../img/nav_logo.png)
+      width: 44px
+      height: 38px
+
+   &__logo-find
+      background-image: url(../img/header-find.svg)
+      width: 26px
+      height: 26px
+      background-size: cover
+
+   &__logo-find:active
+      transform: scale(0.8)
+
+.menu__btn--group
+   display: flex
+   position: relative
+   height: 100%
+   align-items: flex-end
+
+   & > li
+      margin: 0 0 0 33px
+
+   & > li:nth-child(2)
+      background-image: url(../img/header-reg.svg)
+      width: 29px
+      height: 29px
+
+   & > li:nth-child(3)
+      background-image: url(../img/header-cart.svg)
+      width: 32px
+      height: 29px
+      position: relative
+
+.menu__btn--button
+   background-image: url(../img/header-menu.svg)
+   width: 32px
+   height: 23px
+   background-size: cover
+
+   &:active
+      transform: scale(0.8)
+.btn-group-label
+   position: absolute
+   left: 24px
+   top: -7px
+   width: 19px
+
+.menu-close
+   margin: 16px 16px 12px
+   height: 12px
+   width: 12px
+   background-image: url(../img/close.png)
+   align-self: flex-end
+a
+   #6F6E6E
+a:visited
+   color: #6F6E6E
+
+.menu__vertical
+   top: 75px
+   right: -231px
+   width: 1600px
+   height: 765px
+   position: absolute
+   display: none
+   z-index: 1
+   font-size: 14px
+   line-height: 17px
+   color: #F16D7F
+   text-transform: uppercase
+
+   &-list li ul li
+      margin: 12px 0 0 20px
+      text-transform: none
+
+   &-list  li
+      margin: 20px 0 0 0
+
+   & a
+      text-decoration: none
+      color: hsl(0, 0%, 43%)
+
+   &-block
+      display: flex
+      flex-direction: row
+      width: 100%
+      height: 100%
+
+   &-back
+      background: #000
+      height: 100%
+      opacity: 0.2
+      width: 100%
+
+   &-list
+      display: flex
+      height: 100%
+      flex-direction: column
+      background-color: white
+      box-shadow: 0px 0px 0px black
+      width: 267px
+      padding-left: 32px
+      box-sizing: border-box
+
+.white__back
+   background-color: #ffffff
+   max-width: 1600px
+   display: flex
+   flex-direction: column
+   align-items: center
+ul
+   list-style: none
+
+input
+   background: white
+   border: 1px solid #A4A4A4
+   &:hover
+      outline: 2px solid $dark-pink
+//product
+
+.product
+   margin: 96px 0 0 0
+   padding: 0 0 95px 0
+
+   &__catalog
+      display: flex
+      flex-direction: row
+      align-items: center
+      padding: 0 0 95px 0
+
+   &__header
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-size: 30px
+      line-height: 36px
+      color: $dark-blue
+
+   &__header-text
+      font-size: 14px
+      line-height: 17px
+      color: #9F9F9F
+      margin: 0 0 48px 0
+
+   &__list
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+
+   &__card
+      background: #F8F8F8
+      height: 581px
+      width: 360px
+      margin-bottom: 40px
+
+   &__card:hover .product__add-cover
+      display: block
+
+   &__add button:active
+      transform: scale(0.8)
+
+   &__card-imgbox
+      position: relative
+
+   &__card-img
+      margin-bottom: 25px
+
+   &__add-cover
+      display: none
+
+   &__add
+      position: absolute
+      height: 94%
+      width: 100%
+      background: black
+      display: flex
+      justify-content: center
+      align-items: center
+      opacity: 0.7
+      top: 0px
+
+   &__add button
+      border: 1px solid#ffF
+      background: transparent
+      color: white
+      display: flex
+      justify-content: center
+      width: 138px
+      height: 43px
+      align-items: center
+
+   &__add-cart
+      background-image: url(../img/header-cart.svg)
+      width: 26px
+      height: 24px
+      background-size: cover
+      margin-right: 11px
+
+   &__card-header
+      margin-left: 18px
+      margin-bottom: 13px
+
+      font-size: 13px
+      line-height: 16px
+      color: #000000
+      text-transform: uppercase
+
+   &__card-text
+      margin-left: 16.4px
+      margin-bottom: 18px
+
+      font-weight: 300
+      font-size: 14px
+      line-height: 17px
+      color: #5D5D5D
+
+   &__card-price
+      margin-left: 18px
+      font-size: 16px
+      line-height: 19px
+      color: $dark-pink
+
+   &__bottom-wrap
+      display: flex
+      justify-content: center
+      margin-top: 45px
+
+   &__button
+      font-family: 'Lato'
+      border: 1px solid $dark-pink
+      background: #FFFFFF
+      text-decoration: none
+      display: inline-block
+      color: #F26376
+      padding: 14.5px 38.5px 13.5px 38.5px
+      text-align: center
+
+   &__button:hover
+      background: $dark-pink
+      color: #FFFFFF
+//end product
+
+.footer
+
+   background-color: #222224
+   max-width: 1600px
+
+.advantages
+   display: flex
+   justify-content: space-around
+   height: 341px
+
+   &__it
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 103px 0 0 0
+
+   & > .advantages__it:nth-child(2) > .advantages__it-img
+      background-image: url(../img/footer-top-l.svg)
+      height: 32px
+      width: 45px
+      margin: 0 0 30px 0
+
+   & > .advantages__it:nth-child(3) > .advantages__it-img
+      background-image: url(../img/footer-top-m.svg)
+      height: 40px
+      width: 40px
+      margin: 0 0 25px 0
+
+   & > .advantages__it:nth-child(4) > .advantages__it-img
+      background-image: url(../img/footer-top-r.svg)
+      height: 35px
+      width: 47px
+      margin: 0 0 30px 0
+
+   &__it-h
+      font-size: 19.96px
+      line-height: 24px
+      color: #FBFBFB
+      margin: 0 0 16px 0
+
+   &__it-p
+      font-weight: 300
+      font-size: 13.972px
+      line-height: 17px
+      text-align: center
+      width: 360px
+      height: 34px
+
+      color: #FBFBFB
+
+.footer__white
+   display: flex
+   justify-content: space-around
+   background-image: url(../img/photosubscribe.png)
+   height: 448px
+
+   &-comment
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin: 97px 0 0 0
+
+   &-img
+      margin-bottom: 33px
+
+   &-text
+      width: 360px
+      height: 99px
+      font-size: 20px
+      line-height: 24px
+      text-align: center
+      color: #222224
+
+.footer__form
+   display: flex
+   flex-direction: column
+   margin-top: 150px
+
+   &-text
+      font-weight: bold
+      font-size: 24px
+      line-height: 167.2%
+      text-align: center
+      color: #222224
+      margin-bottom: 12px
+      text-transform: uppercase
+
+   &-header
+      font-size: 24px
+      line-height: 167.2%
+      text-align: center
+      color: #222224
+
+   &-p
+      font-size: 18px
+      font-weight: normal
+
+   &-subscribe
+      display: flex
+
+.footer__white-input
+   background: #E1E1E1
+   width: 170px
+   height: 36px
+   padding: 7px 64px 6px 22px
+   border-radius: 24px 0px 0px 24px
+   border: 0px
+   opacity: 0.67
+   font-size: 14px
+   line-height: 17px
+   &:hover
+      outline: none
+.footer__white-button
+   font-size: 14px
+   line-height: 17px
+   text-decoration: none
+   width: 95px
+   padding: 7px 6px 6px 15px
+   border: 0px
+   color: #FFFFFF
+   background: $dark-pink
+   display: flex
+   align-items: center
+   text-align: center
+   border-radius: 0px 24px 24px 0px
+
+.footer__copyright
+   height: 79px
+   display: flex
+   justify-content: space-between
+   align-items: center
+
+   &-copy
+      color: #FBFBFB
+      font-size: 16px
+      line-height: 19px
+
+   &-soc
+      display: flex
+
+   &-img
+      background-color: #FFFFFF
+      width: 32px
+      height: 32px
+      margin: 0 0 0 7.3px
+      display: flex
+      align-items: center
+      justify-content: center
+
+   &-img:hover
+      background-color: $dark-pink
+
+   &-img:hover .footer-img-soc-im
+      filter: invert(100%)
+
+.display-block
+   display: block

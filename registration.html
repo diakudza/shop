@@ -6,27 +6,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Registration</title>
 
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/registration.css">
-    <link rel="stylesheet" href="style/registration-adaptive.css">
+
+    <link rel="stylesheet" href="css/registration.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header class="top ">
+    <header>
         <div class="nav container">
             <div class="nav__panel margin container width">
 
                 <ul class="nav__logo">
                     <li><a href="index.html" title="Main"></a></li>
-                    <li><button class="nav__logo-find" title="Find"></button></li>
+                    <li><button type="button" class="nav__logo-find" title="Find"></button></li>
                 </ul>
 
-                <ul class="menu__btngroup">
+                <ul class="menu__btn--group">
                     <li>
-                        <button class="menu__btngroup-menu" id="menu_btn" title="Menu"></button>
+                        <button type="button" class="menu__btn--button" id="menu_btn" title="Menu"></button>
                         <NAV class="menu__vertical" id="menu__vertical">
 
                             <div class="menu__vertical-block">
@@ -90,10 +89,17 @@
             <input type="text" name="lastname" placeholder="Last Name">
 
             <label class="radio__group" for="pol">
-                <input name="pol" type="radio" value="male">
-                <h4>Male</h4>
-                <input name="pol" type="radio" value="famale">
-                <h4>Female</h4>
+                <input name="pol" class="radio" type="radio" id="male" value="male">
+
+                <label for="male">
+                    <h4>Male</h4>
+                </label>
+
+
+                <input name="pol" class="radio" type="radio" id="female" value="famale">
+                <label for="female">
+                    <h4>Female</h4>
+                </label>
             </label>
 
             <h4>Login details</h4>
@@ -103,7 +109,7 @@
             </h5>
 
 
-            <button class="button join-now">
+            <button type="button" class="button join-now">
                 <span>join now</span><img src="img/reg_button.png">
             </button>
 
@@ -160,7 +166,7 @@
                 </div>
                 <div class="footer__form-subscribe">
                     <input type="text" class="footer__white-input" placeholder="Enter Your Email">
-                    <button class="footer__white-button">Subscribe</button>
+                    <button type="submit" class="footer__white-button">Subscribe</button>
                 </div>
             </form>
         </section>

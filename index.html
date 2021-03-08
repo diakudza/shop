@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/index-adaptive.css">
+
+    <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="top ">
+    <header>
         <div class="nav container">
             <div class="nav__panel margin container width">
 
                 <ul class="nav__logo">
                     <li><a href="index.html" title="Main"></a></li>
-                    <li><button class="nav__logo-find" title="Find"></button></li>
+                    <li><button type="button" class="nav__logo-find" title="Find"></button></li>
                 </ul>
 
-                <ul class="menu__btngroup">
+                <ul class="menu__btn--group">
                     <li>
-                        <button class="menu__btngroup-menu" id="menu_btn" title="Menu"></button>
+                        <button type="button" class="menu__btn--button" id="menu_btn" title="Menu"></button>
                         <NAV class="menu__vertical" id="menu__vertical">
 
                             <div class="menu__vertical-block">
@@ -150,7 +148,7 @@
                         <img class="product__card-img" src="img/product-card1.png" height="420" alt="cadr_img">
                         <div class="product__add-cover">
                             <div class="product__add">
-                                <button>
+                                <button type="button">
                                     <span class="product__add-cart"></span> <span>Add to Cart</span>
 
                                 </button>
@@ -175,7 +173,7 @@
                         <img class="product__card-img" src="img/product-card2.png" height="420" alt="cadr_img">
                         <div class="product__add-cover">
                             <div class="product__add">
-                                <button>
+                                <button type="button">
                                     <span class="product__add-cart"></span> <span>Add to Cart</span>
 
                                 </button>
@@ -200,7 +198,7 @@
                         <img class="product__card-img" src="img/product-card3.png" height="420" alt="cadr_img">
                         <div class="product__add-cover">
                             <div class="product__add">
-                                <button>
+                                <button type="button">
                                     <span class="product__add-cart"></span> <span>Add to Cart</span>
 
                                 </button>
@@ -225,7 +223,7 @@
                         <img class="product__card-img" src="img/product-card4.png" height="420" alt="cadr_img">
                         <div class="product__add-cover">
                             <div class="product__add">
-                                <button>
+                                <button type="button">
                                     <span class="product__add-cart"></span> <span>Add to Cart</span>
 
                                 </button>
@@ -250,7 +248,7 @@
                         <img class="product__card-img" src="img/product-card5.png" height="420" alt="cadr_img">
                         <div class="product__add-cover">
                             <div class="product__add">
-                                <button>
+                                <button type="button">
                                     <span class="product__add-cart"></span> <span>Add to Cart</span>
 
                                 </button>
@@ -275,7 +273,7 @@
                         <img class="product__card-img" src="img/product-card6.png" height="420" alt="cadr_img">
                         <div class="product__add-cover">
                             <div class="product__add">
-                                <button>
+                                <button type="button">
                                     <span class="product__add-cart"></span> <span>Add to Cart</span>
 
                                 </button>
@@ -298,7 +296,7 @@
             </ul>
 
             <div class="product__bottom-wrap">
-                <button class="product__button container">
+                <button type="button" class="product__button container">
                     Browse All Product
                 </button>
             </div>
@@ -341,7 +339,7 @@
                 </div>
                 <div class="footer__form-subscribe">
                     <input type="text" class="footer__white-input" placeholder="Enter Your Email">
-                    <button class="footer__white-button">Subscribe</button>
+                    <button type="submit" class="footer__white-button">Subscribe</button>
                 </div>
             </form>
         </section>
@@ -364,10 +362,6 @@
             </ul>
         </section>
     </footer>
-
-
-
-
     <script src="js/menu.js"></script>
 </body>
 
