@@ -6,10 +6,15 @@
    display: flex
    background-color: $pink
    align-items: center
-   width: 1600px
-   height: 763px
+   width: 100%
+   height: 766px
    text-transform: uppercase
-
+   +tablet
+      height: 500px
+   +tablet-mini
+      height: 385px
+   +mobile
+      height: 385px
 .main__img
 
    background-image: url(../img/main-img.png)
@@ -17,12 +22,16 @@
    height: 100%
    background-position: center
    background-size: cover
+   @media (max-width: 600px )
+
+      display: none
 
 .tagline
    display: flex
    align-items: center
-   margin: 0 0 81px 68px
-
+   //margin: 0 0 81px 68px
+   @media (max-width: 600px )
+      margin: 0 auto
    &__text
       +font(48px, 58px, 900)
       font-family: Lato
@@ -31,9 +40,21 @@
       font-size: 48px
       line-height: 58px
 
+      +tablet
+         +font(44px, 52px, 900)
+      +tablet-mini
+         +font(42px, 49px, 900)
+      +mobile
+         +font(38px, 45px, 900)
+
    &__text-head h4
       +font(37px,44px,700)
-
+      +tablet
+         +font(24px, 29px, 700)
+      +tablet-mini
+         +font(22px, 27px, 700)
+      +mobile
+         +font(20px, 24px, 700)
    &__text span  h4 span
       color: $dark-pink
 
@@ -44,29 +65,52 @@
       margin-right: 16px
 
 .offer
-   padding-top: 65px
-
+   padding: 65px 0 0 0
+   height: 570px
+   +tablet
+      padding: 19px 0 0 0
+      height: 304px
+   +tablet-mini
+      padding: 19px 0 0 0
+      height: 304px
+   +mobile
+      height: auto
    &__list
       display: flex
       flex-wrap: wrap
       justify-content: space-between
-
+      height: 100%
+      +mobile
+         flex-direction: column
+         flex-wrap: nowrap
+         justify-content: center
    &__list > li
       margin: 0 0 30px
-
+      width: 32%
+      height: 47%
+      +tablet-mini
+         width: 31%
+         height: 55%
+      +mobile
+         width: 98%
+         height: 247px
+   &__list > li > a
+      width: 100%
+      height: 100%
+      display: block
    &__card
-      width: 360px
-      height: 280px
+      width: 100%
+      height: 100%
       position: relative
       background-position: center
-      background: rgba(33, 22, 22,1)
+      //background: rgba(33, 22, 22,1)
       background-size: cover
       text-transform: uppercase
 
    &__card-text
       position: absolute
-      left: 33%
-      top: 40%
+      left: 50%
+      top: 50%
       font-weight: 400
       font-size: 16px
       line-height: 19px
@@ -74,6 +118,7 @@
       display: flex
       flex-direction: column
       align-items: center
+      transform: translate(-50%, -50%)
 
    &__card-text h4
       color: $dark-pink
@@ -101,8 +146,8 @@
       width: 100%
 
    &__card-accessories .offer__card-text
-      left: 43%
-      top: 38%
+      left: 50%
+      top: 50%
 
 .off__women
 
