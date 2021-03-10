@@ -1062,6 +1062,41 @@ input:hover {
   text-transform: uppercase;
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+  .registration__header {
+    padding: 0 0 0 16px;
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .registration__header {
+    padding: 0 0 0 16px;
+    margin: 0 0 40px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .registration__header {
+    margin: 0 0 40px 0;
+    padding: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .registration__header span {
+    margin: 0 auto;
+  }
+}
+
 .loyalty {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1076,6 +1111,27 @@ input:hover {
   font-size: 24px;
   line-height: 29px;
   max-width: 652px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .loyalty {
+    margin: 0 16px 0 16px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .loyalty {
+    margin: 0 16px 0 16px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .loyalty {
+    margin: 40px 8.5px 0 8.5px;
+    width: 100%;
+  }
 }
 
 .loyalty h1 {
@@ -1114,6 +1170,27 @@ input:hover {
   width: 360px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .form {
+    margin: 0 16px 0 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 375px) {
+  .form {
+    margin: 0 16px 0 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .form {
+    margin: 0 8.5px 0 8.5px;
+    width: 100%;
+  }
 }
 
 .form h3 {
@@ -1161,6 +1238,12 @@ h4 input {
   margin: 0 0 025px;
   width: 44px;
   height: 25px;
+}
+
+@media (max-width: 375px) {
+  h4 input {
+    width: 100%;
+  }
 }
 
 .button {
