@@ -3,58 +3,79 @@
 @import mixins
 @import common
 //main header
+.white__back
+   width: 100%
 .catalog__header
    display: flex
    justify-content: space-between
    align-items: center
-   width: 1141px
+   width: 100%
    height: 148px
-   background-color: #F1E4E6
+   background-color: $pink
    padding: 0 230px 0 230px
    text-transform: uppercase
+   box-sizing: border-box
+
    &--arrivals
       font-size: 24px
       line-height: 29px
-      color: #F16D7F
+      color: $dark-pink
+
+.slider
+   margin: 0 auto
+   width: 100%
+.slider__item-content
+   display: flex
+   justify-content: center
+.menu__vertical-block
+   justify-content: flex-end
+
+.menu__vertical-back
+   display: none
+
 .catalog__menu
    display: flex
    flex-direction: row
    align-items: center
    position: relative
-   height: 132px
    text-transform: uppercase
+   margin: 0 0 50px
+
    &--size
       display: flex
 
    &--it
       font-size: 14px
       line-height: 17px
-      color: #6F6E6E
+      color: $gray
       margin: 0 28px 0 10px
 
 .breadcrumbs
    font-weight: 300
    font-size: 14px
    line-height: 17px
-   color: #636363
+   color: $gray
+
    & a
       text-decoration: none
+      color: $gray
+
    & ul li
       display: inline-table
       text-transform: uppercase
 
    & ul li:last-child > a
-      color: #F16D7F
+      color: $dark-pink
 
 //end main header
 
-.product__table
-   margin: 665px 0 0 0
 .product__main
-   position: relative
+
    display: flex
    flex-direction: column
    align-items: center
+   margin: 0 0 128px
+
    &--top
       display: flex
       justify-content: space-between
@@ -75,13 +96,12 @@
       justify-content: center
       box-sizing: border-box
       padding-top: 10px
-   &--bottom
-      position: absolute
+
+   &--card
+      margin: -65px 0 0 0
       width: 1140px
-      height: 601px
-      top: 690px
       box-sizing: border-box
-      background-color: #FFFFFF
+      background-color: $white
       border: 1px solid #EAEAEA
       display: flex
       justify-content: space-between
@@ -90,36 +110,30 @@
       align-items: center
       padding-bottom: 65px
       z-index: 1
+
+      & h4
+         +font(14px,17px, 300)
+         color: $dark-pink
+         margin: 0 0 12px 0
+         text-transform: uppercase
+
+      & h3
+         +font(18px,22px, 300)
+         color: $gray
+         margin: 12px 0 48.4px
+         text-transform: uppercase
+
+      & h2
+         +font(24px,29px, 300)
+         color: $dark-pink
+
    &--text
       height: 51px
       width: 555px
-      font-family: Lato
-      font-style: normal
-      font-weight: 300
-      font-size: 14px
-      line-height: 17px
+      +font(14px,17px, 300)
       text-align: center
-      color: #5E5E5E
-      margin-bottom: 32.5px
-
-   &--bottom h4
-      font-weight: 300
-      font-size: 14px
-      line-height: 17px
-      color: #F16D7F
-
-   &--bottom h3
-      font-weight: 300
-      font-size: 18px
-      line-height: 22px
-      color: #4D4D4D
-      margin-bottom: 48.4px
-
-   &--bottom h2
-      font-weight: 300
-      font-size: 24px
-      line-height: 29px
-      color: #EF5B70
+      color: $gray
+      margin: 0 0 32.5px
 
    &--box img
       width: 12px
@@ -128,14 +142,13 @@
 .red_line_hor
    width: 63px
    height: 3px
-   background-color: #EF5B70
+   background-color: $dark-pink
 
    &_long
       width: 642px
       height: 1px
-      background-color: #EF5B70
-      margin-top: 65.5px
-      margin-bottom: 65.5px
+      background-color: $dark-pink
+      margin: 65.5px 0
 
 .product__button
    display: flex
@@ -149,6 +162,9 @@
 
 .product__button:hover  svg
    fill: $white
+
+.product__table
+   margin: 160px 0 0 0
 
 .advantages
    display: none

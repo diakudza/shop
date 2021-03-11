@@ -320,6 +320,10 @@ body {
       align-self: flex-end;
 }
 
+a {
+  color: #6F6E6E;
+}
+
 a:visited {
   color: #6F6E6E;
 }

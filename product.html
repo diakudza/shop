@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="css/product.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/chiefslider.css">
+    <script src="js/chiefslider.js"></script>
 </head>
 
 <body>
@@ -87,11 +89,41 @@
         </section>
         <section class="product__main">
             <div class="product__main--top">
-                <div class="product__main--box"><img src="img/left.svg"></div>
-                <div class="product__main--img"><img src="img/product_main_img.png" height="724"></div>
-                <div class=" product__main--box"><img src="img/right.svg"></div>
+
+                <div class="slider" data-slider="chiefslider">
+                    <div class="slider__container">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="img/product_main_img.png"
+                                                height="724"></div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="img/product_main_img2.jpg"
+                                                height="724"></div>
+                                    </div>
+                                </div>
+                                <div class="slider__item">
+                                    <div class="slider__item-container">
+                                        <div class="slider__item-content"><img src="img/product_main_img3.jpg"
+                                                height="724"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                </div>
+
             </div>
-            <div class="product__main--bottom margin">
+
+
+            <div class="product__main--card margin">
 
 
                 <h4>women collection</h4>
@@ -264,6 +296,15 @@
 
 
     <script src="js/menu.js"></script>
+    <script>
+        // после готовности DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            // получаем корневой элемент слайдера
+            const $slider = document.querySelector('[data-slider="chiefslider"]');
+            // выполняем инициализацию
+            new ChiefSlider($slider);
+        });
+    </script>
 </body>
 
 </html>

@@ -320,6 +320,10 @@ body {
       align-self: flex-end;
 }
 
+a {
+  color: #6F6E6E;
+}
+
 a:visited {
   color: #6F6E6E;
 }
@@ -1013,6 +1017,10 @@ input:hover {
   display: block;
 }
 
+.white__back {
+  width: 100%;
+}
+
 .catalog__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,17 +1031,43 @@ input:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1141px;
+  width: 100%;
   height: 148px;
   background-color: #F1E4E6;
   padding: 0 230px 0 230px;
   text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .catalog__header--arrivals {
   font-size: 24px;
   line-height: 29px;
   color: #F16D7F;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slider__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__vertical-block {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu__vertical-back {
+  display: none;
 }
 
 .catalog__menu {
@@ -1048,8 +1082,8 @@ input:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 132px;
   text-transform: uppercase;
+  margin: 0 0 50px;
 }
 
 .catalog__menu--size {
@@ -1061,7 +1095,7 @@ input:hover {
 .catalog__menu--it {
   font-size: 14px;
   line-height: 17px;
-  color: #6F6E6E;
+  color: #636363;
   margin: 0 28px 0 10px;
 }
 
@@ -1074,6 +1108,7 @@ input:hover {
 
 .breadcrumbs a {
   text-decoration: none;
+  color: #636363;
 }
 
 .breadcrumbs ul li {
@@ -1085,12 +1120,7 @@ input:hover {
   color: #F16D7F;
 }
 
-.product__table {
-  margin: 665px 0 0 0;
-}
-
 .product__main {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1101,6 +1131,7 @@ input:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0 128px;
 }
 
 .product__main--top {
@@ -1138,14 +1169,12 @@ input:hover {
   padding-top: 10px;
 }
 
-.product__main--bottom {
-  position: absolute;
+.product__main--card {
+  margin: -65px 0 0 0;
   width: 1140px;
-  height: 601px;
-  top: 690px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: #FFF;
   border: 1px solid #EAEAEA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1165,39 +1194,44 @@ input:hover {
   z-index: 1;
 }
 
-.product__main--text {
-  height: 51px;
-  width: 555px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 300;
+.product__main--card h4 {
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
-  color: #5E5E5E;
-  margin-bottom: 32.5px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
 }
 
-.product__main--bottom h4 {
+.product__main--card h3 {
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
+  font-style: normal;
+  color: #636363;
+  margin: 12px 0 48.4px;
+  text-transform: uppercase;
+}
+
+.product__main--card h2 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
   color: #F16D7F;
 }
 
-.product__main--bottom h3 {
+.product__main--text {
+  height: 51px;
+  width: 555px;
+  font-size: 14px;
+  line-height: 17px;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  color: #4D4D4D;
-  margin-bottom: 48.4px;
-}
-
-.product__main--bottom h2 {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #EF5B70;
+  font-style: normal;
+  text-align: center;
+  color: #636363;
+  margin: 0 0 32.5px;
 }
 
 .product__main--box img {
@@ -1208,15 +1242,14 @@ input:hover {
 .red_line_hor {
   width: 63px;
   height: 3px;
-  background-color: #EF5B70;
+  background-color: #F16D7F;
 }
 
 .red_line_hor_long {
   width: 642px;
   height: 1px;
-  background-color: #EF5B70;
-  margin-top: 65.5px;
-  margin-bottom: 65.5px;
+  background-color: #F16D7F;
+  margin: 65.5px 0;
 }
 
 .product__button {
@@ -1240,6 +1273,10 @@ input:hover {
 
 .product__button:hover svg {
   fill: #FFF;
+}
+
+.product__table {
+  margin: 160px 0 0 0;
 }
 
 .advantages {
