@@ -6,17 +6,22 @@
 .white__back
    display: flex
    justify-content: space-between
-   padding-bottom: 128px
+   padding: 0 0 128px
    flex-wrap: wrap
    flex-direction: row
    align-items: end
+   +mobile
+      flex-direction: column
+      padding: 0 0 96px
 .menu__vertical
    right: -1563px
+
    &-block
       height: 888px
 
    &-back
       display: none
+
 .cart__header
    display: flex
    background-color: #F1E4E6
@@ -30,58 +35,104 @@
    line-height: 29px
    color: $dark-pink
    text-transform: uppercase
+   +tablet
+      padding: 0 0 0 16px
+      margin: 0 0 40px 0
+   +tablet-mini
+      padding: 0 0 0 16px
+      margin: 0 0 40px 0
+   +mobile
+      margin: 0 0 40px 0
+      padding: 0
+      width: 100%
+      justify-content: center
+      flex-direction: column
+
+   & span
+      +mobile
+         margin: 0 auto
 
 .card__column
    display: flex
    flex-direction: column
    margin: 0 0 0 230px
    width: 652px
+   +tablet
+      margin: 0 16px 0 16px
+      width: 100%
+   +tablet-mini
+      margin: 0 16px 0 16px
+      width: 100%
+   +mobile
+      margin: 0
+      //padding: 0 8px
+      width: 100%
+      align-items: center
 
    &-btnblock
       display: flex
       flex-direction: row
       justify-content: space-between
       +font(14px,17px, 300)
-
+      +tablet
+         justify-content: space-around
+      +mobile
+         justify-content: space-between
 .cart__card
    position: relative
    display: flex
    flex-direction: row
-   margin-bottom: 40px
+   margin: 0 0 40px 0
    height: 306px
    background-color: white
    filter: drop-shadow(17px 17px 8px rgba(0, 0, 0, 0.13))
-
+   +mobile
+      height: 188px
+      width: 96%
    & h2
-      font-size: 24px
-      line-height: 29px
+      +font(24px,29px, 400)
       color: $dark-blue
       margin: 22px 0 42px 0
       text-transform: uppercase
+      +mobile
+         +font(16px,19px, 400)
+         margin: 13px 0 25px 0
+         width: 140px
 
    & p
-      font-weight: normal
-      font-size: 22px
-      line-height: 26px
+      +font(22px,26px, 400)
       color: #575757
-      margin-bottom: 6px
+      margin: 0 0 6px 0
+      +mobile
+         +font(14px,17px, 400)
+         margin: 0 0 4px 0
+
    & span
       color: $dark-pink
-   &-img
-      margin-right: 31px
 
+   &-img
+      margin: 0 31px 0 0
+      +mobile
+         margin: 0 17px 0 0
    &-close
       position: absolute
       right: 18px
       top: 22px
       width: 18px
       height: 18px
+      +mobile
+         width: 11px
+         height: 11px
 
    & input
       margin: 0 0 0 25px
       width: 44px
       height: 25px
       padding: 0 0 0 10px
+      +mobile
+         +font(10px,12px, 400)
+         width: 23px
+         height: 15px
 
 .product__button
    border: 1px solid #A4A4A4
@@ -92,26 +143,40 @@
    padding: 17.5px 41.5px 16.5px 38.5px
    text-align: center
    text-transform: uppercase
+   +mobile
+      width: 174px
+      height: 33px
+      box-shadow: border-box
+      +font(12px,14px, 400)
+      padding: 0
 
    &:hover
       background: #584b4d
       color: #FFFFFF
+
 .form
    display: flex
    flex-direction: column
    margin: 0 230px 0 0
    width: 360px
-   padding-top: 10px
+   padding: 10px 0 0 0
+   +tablet
+      flex-direction: row
+      margin: 0 16px 0 16px
+      width: 100%
+   +mobile
+      margin: 0 8px 0 8px
 
    &__text
       display: flex
       flex-direction: column
       text-transform: uppercase
 
+      +tablet
+         width: 50%
+
       & h3
-         font-weight: 300
-         font-size: 16px
-         line-height: 19px
+         +font(16px,19px, 300)
          color: #222222
 
       & input
@@ -120,24 +185,18 @@
          padding-left: 16.7px
 
       & h4
-         font-weight: normal
-         font-size: 11px
-         line-height: 13px
-
+         +font(11px,13px, 400)
          color: #4A4A4A
          margin: 0 0 17px 0
 
       & h3
-         font-weight: 300
-         font-size: 16px
-         line-height: 19px
-         color: #222222
+         +font(16px,19px, 300)
+         color: $dark-blue
+
    &__get
       width: 105px
       margin: 23px 0 0 0
-      font-weight: 300
-      font-size: 11px
-      line-height: 13px
+      +font(11px,13px, 400)
       padding: 9px 14px 12px 14px
 
    &__checkout
@@ -151,19 +210,23 @@
       align-items: flex-end
       padding: 39px 37px 20px 37px
       text-transform: uppercase
+      +tablet
+         width: 50%
+         margin: 39px 0 0 10px
+      +mobile
+         margin: 49px 0 0 0
       span
          margin: 0 0 0 10px
+
       & h3
-         font-size: 11px
-         line-height: 13px
-         font-weight: normal
+         +font(11px,13px, 400)
          color: #4A4A4A
          margin: 0 0 12px 0
+
       & h4
-         font-weight: 300
-         font-size: 16px
-         line-height: 19px
-         color: #222222
+         +font(16px,19px, 300)
+         color: $dark-blue
+
          span
             color: #F16D7F
 
@@ -175,14 +238,13 @@
 
 .button__proceed
    background-color: #F16D7F
-   font-weight: 300
-   font-size: 16px
-   line-height: 19px
-
+   +font(16px,19px, 300)
    border: none
    color: #FFFFFF !important
-.button__proceed:hover
-   background-color: #c64152
+   height: 50px
+   width: 273px
+   &:hover
+      background-color: #c64152
 
 .cart_close:active .cart__card
    display: hide

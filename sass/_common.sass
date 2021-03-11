@@ -5,7 +5,7 @@
    outline: none
    font-family: 'Lato'
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:300,400,700,900')
+//@import url('https://fonts.googleapis.com/css2?family=Lato:300,400,700,900')
 
 .visually-hidden
    position: absolute
@@ -66,11 +66,18 @@ body
    border: 1px solid black
 
 .margin
-   margin: 0 230px 0 230px
-
+   margin: 0 19% 0 19%
+   +tablet
+      margin: 0 16px 0 16px
 .width
-   width: 1140px
-
+   width: 71%
+   //width: (100-2*16)vw
+   +tablet
+      width: 96%
+   +tablet-mini
+      width: 96%
+   +mobile
+      width: 98%
 .container
    margin: 0px auto
 
@@ -79,7 +86,10 @@ body
    background-color: $dark-blue
    padding-bottom: 20px
    box-sizing: border-box
+   max-width: 1600px
 
+   +tablet
+      height: 74px
    & a
       display: block
       height: 100%
@@ -90,8 +100,13 @@ body
       align-items: center
       justify-content: space-between
       height: 100%
-      max-width: 1140px
-
+      max-width: 71%
+      +tablet
+         max-width: 96%
+      +tablet-mini
+         max-width: 96%
+      +mobile
+         max-width: 100%
    &__panel button
       border: none
       background-color: transparent
@@ -134,12 +149,16 @@ body
       background-image: url(../img/header-reg.svg)
       width: 29px
       height: 29px
+      +mobile
+         display: none
 
    & > li:nth-child(3)
       background-image: url(../img/header-cart.svg)
       width: 32px
       height: 29px
       position: relative
+      +mobile
+         display: none
 
 .menu__btn--button
    background-image: url(../img/header-menu.svg)
@@ -178,7 +197,10 @@ a:visited
    line-height: 17px
    color: #F16D7F
    text-transform: uppercase
-
+   +mobile
+      right: 0px
+      width: 375px
+      height: 610px
    &-list li ul li
       margin: 12px 0 0 20px
       text-transform: none
@@ -201,7 +223,8 @@ a:visited
       height: 100%
       opacity: 0.2
       width: 100%
-
+      +mobile
+         display: none
    &-list
       display: flex
       height: 100%
@@ -211,7 +234,8 @@ a:visited
       width: 267px
       padding-left: 32px
       box-sizing: border-box
-
+      +mobile
+         width: 100%
 .white__back
    background-color: #ffffff
    max-width: 1600px
@@ -231,7 +255,8 @@ input
 .product
    margin: 96px 0 0 0
    padding: 0 0 95px 0
-
+   +mobile
+      margin: 0 0 0 0
    &__catalog
       display: flex
       flex-direction: row
@@ -256,7 +281,10 @@ input
       display: flex
       justify-content: space-between
       flex-wrap: wrap
-
+      +tablet-mini
+         justify-content: center
+      +mobile
+         justify-content: center
    &__card
       background: #F8F8F8
       height: 581px
@@ -359,12 +387,24 @@ input
    display: flex
    justify-content: space-around
    height: 341px
+   padding: 104px 0 0 0
+   +tablet
+      height: 610px
+      flex-direction: column
+      padding: 48px 0 64px 0
+      box-sizing: content-box
+   +tablet-mini
+      flex-direction: column
+      padding: 48px 0 64px 0
+      box-sizing: content-box
 
+   +mobile
+      flex-direction: column
+      height: 610px
    &__it
       display: flex
       flex-direction: column
       align-items: center
-      margin: 103px 0 0 0
 
    & > .advantages__it:nth-child(2) > .advantages__it-img
       background-image: url(../img/footer-top-l.svg)
@@ -405,13 +445,33 @@ input
    justify-content: space-around
    background-image: url(../img/photosubscribe.png)
    height: 448px
-
+   +tablet
+      height: 614px
+      flex-direction: column
+      padding: 54px 0 0 0
+      background-size: cover
+      justify-content: unset
+      background-position-x: -400px
+   +tablet-mini
+      height: 614px
+      flex-direction: column
+      padding: 54px 0 0 0
+      background-size: cover
+      justify-content: unset
+      background-position-x: -400px
+   +mobile
+      height: 500px
    &-comment
       display: flex
       flex-direction: column
       align-items: center
       margin: 97px 0 0 0
-
+      +tablet
+         margin: 0 0 0 0
+      +tablet-mini
+         margin: 0 0 0 0
+      +mobile
+         margin: 0 0 0 0
    &-img
       margin-bottom: 33px
 
@@ -426,27 +486,31 @@ input
 .footer__form
    display: flex
    flex-direction: column
-   margin-top: 150px
-
+   margin: 150px 0 0 0
+   +tablet
+      align-items: center
+      margin: 48px 0 0 0
+   +tablet-mini
+      align-items: center
+      margin: 48px 0 0 0
+   +mobile
+      align-items: center
+      margin: 10px 0 0 0
    &-text
-      font-weight: bold
-      font-size: 24px
-      line-height: 167.2%
+      +font(24px,37px,700)
       text-align: center
-      color: #222224
+      color: $dark-blue
       margin-bottom: 12px
       text-transform: uppercase
-
+      +tablet
+         +font(18px,27px,400)
    &-header
-      font-size: 24px
-      line-height: 167.2%
       text-align: center
-      color: #222224
 
    &-p
-      font-size: 18px
-      font-weight: normal
-
+      +font(18px,31px)
+      +tablet
+         +font(18px,29px,400)
    &-subscribe
       display: flex
 
@@ -481,7 +545,10 @@ input
    display: flex
    justify-content: space-between
    align-items: center
-
+   +mobile
+      height: 143px
+      flex-direction: column-reverse
+      justify-content: space-around
    &-copy
       color: #FBFBFB
       font-size: 16px

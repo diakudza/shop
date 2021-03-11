@@ -30,7 +30,21 @@
    line-height: 29px
    color: #F16D7F
    text-transform: uppercase
-
+   +tablet
+      padding: 0 0 0 16px
+      margin: 0 0 40px 0
+   +tablet-mini
+      padding: 0 0 0 16px
+      margin: 0 0 40px 0
+   +mobile
+      margin: 0 0 40px 0
+      padding: 0
+      width: 100%
+      justify-content: center
+      flex-direction: column
+   & span
+      +mobile
+         margin: 0 auto
 .loyalty
 
    display: flex
@@ -41,7 +55,15 @@
    font-size: 24px
    line-height: 29px
    max-width: 652px
-
+   +tablet
+      margin: 0 16px 0 16px
+      max-width: 100%
+   +tablet-mini
+      margin: 0 16px 0 16px
+      max-width: 100%
+   +mobile
+      margin: 40px 8.5px 0 8.5px
+      width: 100%
    & h1
       margin: 0 0 22px 0
       font-style: normal
@@ -68,6 +90,15 @@
    margin: 0 0 0 230px
    width: 360px
    box-sizing: border-box
+   +tablet
+      margin: 0 16px 0 16px
+      width: 100%
+   +tablet-mini
+      margin: 0 16px 0 16px
+      width: 100%
+   +mobile
+      margin: 0 8.5px 0 8.5px
+      width: 100%
 
    & h3
       font-weight: 300
@@ -108,7 +139,8 @@ h4 input
    margin: 0 0 025px
    width: 44px
    height: 25px
-
+   +mobile
+      width: 100%
 .button
    border: 1px solid #A4A4A4
    background: #FFFFFF

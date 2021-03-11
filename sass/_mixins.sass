@@ -3,3 +3,15 @@
    line-height: $height
    font-weight: $weight
    font-style: $style
+
+=tablet
+   @media (max-width: 1024px ) and (min-width: $tablet)
+      @content
+
+=tablet-mini
+   @media (max-width: ($tablet) ) and (min-width: ($mobile))
+      @content
+
+=mobile
+   @media (max-width: $mobile)
+      @content
