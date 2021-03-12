@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Shop</title>
-    <link rel="stylesheet" href="../css/index.css">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="../css/catalog.css">
   </head>
   <body>
     <header>
@@ -62,54 +62,68 @@
       </div>
     </header>
     <main class="white__back container">
-      <section class="title">
-        <h2 class="visually-hidden">Main img</h2>
-        <div class="main__img"></div>
-        <div class="tagline">
-          <div class="tagline__redline"></div>
-          <div class="tagline__text"><span class="tagline__text-head">the brand
-              <h4>of luxerious <span>fashion</span></h4></span></div>
+      <section class="catalog__header container"><span class="catalog__header--arrivals">NEW ARRIVALS</span>
+        <nav class="breadcrumbs">
+          <ul>
+            <li><a href="index.html">
+                home /</a></li>
+            <li><a href="#">
+                men /</a></li>
+            <li><a href="#">new arrivals</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="catalog__menu width container margin">
+        <div class="catalog__filter">
+          <div class="img_filtr"></div>filter<img src="img/filter_i.svg">
+          <div class="catalog__filter-menu"><img src="img/filter_i.svg">
+            <ul>
+              <li>
+                <div class="catalog__filter-block">category</div>
+              </li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">Hoodies & Sweatshirts</a></li>
+              <li><a href="#">Jackets & Coats</a></li>
+              <li><a href="#">Polos</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Sweaters & Knits</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Tanks</a></li>
+              <li>
+                <div class="catalog__filter-block">brand</div>
+              </li>
+              <li>
+                <div class="catalog__filter-block">desinder</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog__menu--size">
+          <div class="catalog__menu--it">trending now<img class="catalog__menu--it" src="img/down.svg"></div>
+          <div class="catalog__menu--it">size
+            <ul class="size__menu">
+              <li>
+                <input type="checkbox">xs
+              </li>
+              <li>
+                <input type="checkbox">s
+              </li>
+              <li>
+                <input type="checkbox">m
+              </li>
+              <li>
+                <input type="checkbox">l
+              </li>
+            </ul><img class="catalog__menu--it" src="img/down.svg">
+          </div>
+          <div class="catalog__menu--it">price <img class="catalog__menu--it" src="img/down.svg"></div>
         </div>
       </section>
-      <section class="offer width margin">
-        <h2 class="visually-hidden">Offers</h2>
-        <ul class="offer__list">
-          <li><a href="catalog.html">
-              <div class="offer__card off__women">
-                <div class="offer__card-text">
-                  <p>30% off</p>
-                  <h4>for women</h4>
-                </div>
-              </div></a></li>
-          <li><a href="catalog.html">
-              <div class="offer__card off__man">
-                <div class="offer__card-text">
-                  <p>hot deal</p>
-                  <h4>for men</h4>
-                </div>
-              </div></a></li>
-          <li><a href="catalog.html">
-              <div class="offer__card off__kids">
-                <div class="offer__card-text">
-                  <p>new arrivals</p>
-                  <h4>for kids</h4>
-                </div>
-              </div></a></li>
-          <li><a href="catalog.html">
-              <div class="offer__card-accessories">
-                <div class="offer__card-text">
-                  <p>luxerious & trendy</p>
-                  <h4>accessories</h4>
-                </div>
-              </div></a></li>
-        </ul>
-      </section>
-      <section class="product width margin">
-        <h2 class="visually-hidden">product</h2>
-        <header class="product__header">
-          <h3 class="product__header">Fetured Items</h3>
-          <p class="product__header-text">Shop for items based on what we featured in this week</p>
-        </header>
+      <section class="product__table width container">
+        <h2 class="visually-hidden">product-catalog</h2>
         <ul class="product__list">
           <li class="product__card">
             <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card1.png" height="420" alt="cadr_img"/>
@@ -133,7 +147,7 @@
             </h4>
           </li>
           <li class="product__card">
-            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card2.png" height="420" alt="cadr_img"/>
+            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card12.png" height="420" alt="cadr_img"/>
               <div class="product__add-cover">
                 <div class="product__add">
                   <button type="button"><span class="product__add-cart"> </span><span>Add to Cart</span></button>
@@ -196,7 +210,7 @@
             </h4>
           </li>
           <li class="product__card">
-            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card5.png" height="420" alt="cadr_img"/>
+            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card7.png" height="420" alt="cadr_img"/>
               <div class="product__add-cover">
                 <div class="product__add">
                   <button type="button"><span class="product__add-cart"> </span><span>Add to Cart</span></button>
@@ -217,7 +231,70 @@
             </h4>
           </li>
           <li class="product__card">
-            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card6.png" height="420" alt="cadr_img"/>
+            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card8.png" height="420" alt="cadr_img"/>
+              <div class="product__add-cover">
+                <div class="product__add">
+                  <button type="button"><span class="product__add-cart"> </span><span>Add to Cart</span></button>
+                </div>
+              </div>
+            </div>
+            <h4 class="product__card-header">
+              ellery x m'o capsule
+                          
+            </h4>
+            <p class="product__card-text">
+              Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                          
+            </p>
+            <h4 class="product__card-price">
+              $52.00
+                    
+            </h4>
+          </li>
+          <li class="product__card">
+            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card9.png" height="420" alt="cadr_img"/>
+              <div class="product__add-cover">
+                <div class="product__add">
+                  <button type="button"><span class="product__add-cart"> </span><span>Add to Cart</span></button>
+                </div>
+              </div>
+            </div>
+            <h4 class="product__card-header">
+              ellery x m'o capsule
+                          
+            </h4>
+            <p class="product__card-text">
+              Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                          
+            </p>
+            <h4 class="product__card-price">
+              $52.00
+                    
+            </h4>
+          </li>
+          <li class="product__card">
+            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card10.png" height="420" alt="cadr_img"/>
+              <div class="product__add-cover">
+                <div class="product__add">
+                  <button type="button"><span class="product__add-cart"> </span><span>Add to Cart</span></button>
+                </div>
+              </div>
+            </div>
+            <h4 class="product__card-header">
+              ellery x m'o capsule
+                          
+            </h4>
+            <p class="product__card-text">
+              Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                          
+            </p>
+            <h4 class="product__card-price">
+              $52.00
+                    
+            </h4>
+          </li>
+          <li class="product__card">
+            <div class="product__card-imgbox"><img class="product__card-img" src="img/product-card11.png" height="420" alt="cadr_img"/>
               <div class="product__add-cover">
                 <div class="product__add">
                   <button type="button"><span class="product__add-cart"> </span><span>Add to Cart</span></button>
@@ -238,10 +315,21 @@
             </h4>
           </li>
         </ul>
-        <div class="product__bottom-wrap">
-          <button class="product__button container" type="button">Browse All Product</button>
-        </div>
       </section>
+      <div class="paginator">
+        <div><a href="#"></a><img src="img/left.svg"></div>
+        <ul class="paginator__list">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li>.....</li>
+          <li>20</li>
+        </ul>
+        <div><a href="#"></a><img src="img/right.svg"></div>
+      </div>
     </main>
     <footer class="footer container">
       <section class="advantages container width">
