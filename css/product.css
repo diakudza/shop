@@ -47,13 +47,6 @@ table {
   border-spacing: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  outline: none;
-  font-family: 'Lato';
-}
-
 @font-face {
   font-family: "lato";
   src: url("../fonts/Lato300/Lato-Light.eot");
@@ -84,6 +77,13 @@ table {
   src: url("../fonts/Lato900/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato900/Lato-Black.woff") format("woff"), url("../fonts/Lato900/Lato-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Lato';
 }
 
 .visually-hidden {
