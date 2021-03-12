@@ -62,6 +62,30 @@ table {
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato400/Lato-Regular.eot");
+  src: url("../fonts/Lato400/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato400/Lato-Regular.woff") format("woff"), url("../fonts/Lato400/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato700/Lato-Bold.eot");
+  src: url("../fonts/Lato700/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato700/Lato-Bold.woff") format("woff"), url("../fonts/Lato700/Lato-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato900/Lato-Black.eot");
+  src: url("../fonts/Lato900/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato900/Lato-Black.woff") format("woff"), url("../fonts/Lato900/Lato-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
