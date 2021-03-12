@@ -54,6 +54,14 @@ table {
   font-family: 'Lato';
 }
 
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato300/Lato-Light.eot");
+  src: url("../fonts/Lato300/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato300/Lato-Light.woff") format("woff"), url("../fonts/Lato300/Lato-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
