@@ -1,0 +1,1 @@
+pug -P pug -o C:\Users\diaku\OneDrive\Уроки\курс\\профессиональная\\верстка\shop

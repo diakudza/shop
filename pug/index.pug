@@ -1,6 +1,7 @@
 //- index.pug
-extends ./layout.pug
 
+extends ./layout.pug
+include product_cart
 block variables
    - var title = 'Shop';
    - var page_name = '../css/index.css';   
@@ -12,175 +13,56 @@ block content
          .tagline
             .tagline__redline
             .tagline__text
-            span.tagline__text-head
-               | the brand
+               span.tagline__text-head
+                  | the brand
 
-               h4
-                  | of luxerious 
-                  span fashion
+                  h4
+                     | of luxerious 
+                     span fashion
       section.offer.width.margin
          h2.visually-hidden Offers
          ul.offer__list
             li
-            a(href="catalog.html")
-               .offer__card.off__women
-                  .offer__card-text
-                  p 30% off
-                  h4 for women
+               a(href="catalog.html")
+                  .offer__card.off__women
+                     .offer__card-text
+                        p 30% off
+                        h4 for women
             li
-            a(href="catalog.html")
-               .offer__card.off__man
-                  .offer__card-text
-                  p hot deal
-                  h4 for men
+               a(href="catalog.html")
+                  .offer__card.off__man
+                     .offer__card-text
+                        p hot deal
+                        h4 for men
             li
-            a(href="catalog.html")
-               .offer__card.off__kids
-                  .offer__card-text
-                  p new arrivals
-                  h4 for kids
+               a(href="catalog.html")
+                  .offer__card.off__kids
+                     .offer__card-text
+                        p new arrivals
+                        h4 for kids
             li
-            a(href="catalog.html")
-               .offer__card-accessories
-                  .offer__card-text
-                  p luxerious & trendy
-                  h4 accessories
+               a(href="catalog.html")
+                  .offer__card-accessories
+                     .offer__card-text
+                        p luxerious & trendy
+                        h4 accessories
       section.product.width.margin
          h2.visually-hidden product
          header.product__header
             h3.product__header Fetured Items
             p.product__header-text Shop for items based on what we featured in this week
          ul.product__list
-            li.product__card
-            .product__card-imgbox
-               img.product__card-img(src="img/product-card1.png", height="420", alt="cadr_img")
-               .product__add-cover
-                  .product__add
-                  button(type="button")
-                     span.product__add-cart
-                     |  
-                     span Add to Cart
-            h4.product__card-header.
-               
-               ellery x m'o capsule
-               
-            p.product__card-text.
-               
-               Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-               
-            h4.product__card-price.
-               
-               $52.00
-               
-            li.product__card
-            .product__card-imgbox
-               img.product__card-img(src="img/product-card2.png", height="420", alt="cadr_img")
-               .product__add-cover
-                  .product__add
-                  button(type="button")
-                     span.product__add-cart
-                     |  
-                     span Add to Cart
-            h4.product__card-header.
-               
-               ellery x m'o capsule
-               
-            p.product__card-text.
-               
-               Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-               
-            h4.product__card-price.
-               
-               $52.00
-               
-            li.product__card
-            .product__card-imgbox
-               img.product__card-img(src="img/product-card3.png", height="420", alt="cadr_img")
-               .product__add-cover
-                  .product__add
-                  button(type="button")
-                     span.product__add-cart
-                     |  
-                     span Add to Cart
-            h4.product__card-header.
-               
-               ellery x m'o capsule
-               
-            p.product__card-text.
-               
-               Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-               
-            h4.product__card-price.
-               
-               $52.00
-               
-            li.product__card
-            .product__card-imgbox
-               img.product__card-img(src="img/product-card4.png", height="420", alt="cadr_img")
-               .product__add-cover
-                  .product__add
-                  button(type="button")
-                     span.product__add-cart
-                     |  
-                     span Add to Cart
-            h4.product__card-header.
-               
-               ellery x m'o capsule
-               
-            p.product__card-text.
-               
-               Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-               
-            h4.product__card-price.
-               
-               $52.00
-               
-            li.product__card
-            .product__card-imgbox
-               img.product__card-img(src="img/product-card5.png", height="420", alt="cadr_img")
-               .product__add-cover
-                  .product__add
-                  button(type="button")
-                     span.product__add-cart
-                     |  
-                     span Add to Cart
-            h4.product__card-header.
-               
-               ellery x m'o capsule
-               
-            p.product__card-text.
-               
-               Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-               
-            h4.product__card-price.
-               
-               $52.00
-               
-            li.product__card
-            .product__card-imgbox
-               img.product__card-img(src="img/product-card6.png", height="420", alt="cadr_img")
-               .product__add-cover
-                  .product__add
-                  button(type="button")
-                     span.product__add-cart
-                     |  
-                     span Add to Cart
-            h4.product__card-header.
-               
-               ellery x m'o capsule
-               
-            p.product__card-text.
-               
-               Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-               
-            h4.product__card-price.
-               
-               $52.00
-               
+            +product__card()
+            +product__card('img/product-card2.png')
+            +product__card('img/product-card3.png')
+            +product__card('img/product-card4.png')
+            +product__card('img/product-card5.png')
+            +product__card('img/product-card6.png')
+           
          .product__bottom-wrap
             button.product__button.container(type="button").
             
-            Browse All Product
+               Browse All Product
          
 
 

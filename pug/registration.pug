@@ -5,8 +5,38 @@ block variables
    - var title = 'Registration';
    - var page_name = '../css/registration.css';   
 block content
-   h1= title  
-   p Главная страница сайта... Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+   main.white__back.container
+      .registration__header.container
+         span registration
+      form.form(action)
+         h4 Your Name
+         input(type="text", name="firstname", placeholder="First Name")
+         input(type="text", name="lastname", placeholder="Last Name")
+         label.radio__group(for="pol")
+            input.radio#male(name="pol", type="radio", value="male")
+            label(for="male")
+            h4 Male
+            input.radio#female(name="pol", type="radio", value="famale")
+            label(for="female")
+            h4 Female
+         h4 Login details
+         input(type="email", placeholder="E-mail")
+         input(type="password", placeholder="Password")
+         h5.
+            Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+            
+         button.button.join-now(type="button")
+            span join now
+            img(src="img/reg_button.png")
+      section.loyalty
+         h1 loyalty has its perks
+         p Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+         ul
+            li 15% off welcome offer
+            li Free shipping, returns and exchanges on all orders
+            li $10 off a purchase on your birthday
+            li Early access to products
+            li Exclusive offers & rewards
 
 
 
