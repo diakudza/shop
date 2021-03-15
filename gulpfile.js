@@ -11,13 +11,13 @@ let path = {
 	},
 	src: { 
 		html: [source_folder + "/blocks/*.html", "!" + source_folder + "/blocks/_*.html"],
-		css: source_folder + "/sass/*.sass",
-		js: source_folder + "/js/",
+		css: source_folder + "/sass/*",
+		js: source_folder + "/js/*",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/**/*.ttf"
 	},
 	watch: {
-		html: source_folder + "/blocks/**/*.html",
+		html: source_folder + "/blocks/**/",
 		css: source_folder + "/sass/**/",
 		js: source_folder  + "/js/**/",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
@@ -36,13 +36,13 @@ let {src, dest} = require('gulp'),
 	clean_css = require('gulp-clean-css');
 	rename = require('gulp-rename');
 	imagemin = require('gulp-imagemin');
-	webp = require('gulp-webp');
-	webphtml = require('gulp-webp-html');
-	webpcss = require('gulp-webpcss');
+	//webp = require('gulp-webp');
+	//webphtml = require('gulp-webp-html');
+	//webpcss = require('gulp-webpcss');
 	ttf2woff = require('gulp-ttf2woff');
 	ttf2woff2 = require('gulp-ttf2woff2');
 	fonter = require('gulp-fonter');
-	fs = require('fs');
+	//fs = require('fs');
 
 
 
@@ -66,7 +66,7 @@ function html(){
 
 function js(){
 	return src(path.src.js)
-		.pipe(fileinclude())
+		//.pipe(fileinclude())
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream())
 }
@@ -97,7 +97,7 @@ function cb(){}
 
 function watchFiles(params){ 
 	gulp.watch([path.watch.html],html);
-	gulp.watch([path.watch.css],html);
+	gulp.watch([path.watch.css],css);
 	gulp.watch([path.watch.js],js);
 	gulp.watch([path.watch.img],images);
 }
@@ -105,7 +105,9 @@ function watchFiles(params){
 function clean(params){ 
 	return del(path.clean);
 }
-
+function cleanLite(params){ 
+	return del(path.build.css.cleanLite);
+}
 function css(params){ 
 	return src(path.src.css)
 		.pipe(sass({pretty:true}))
@@ -120,6 +122,7 @@ function css(params){
 		.pipe(dest(path.build.css))//выгрузка сжатого
 		.pipe(browsersync.stream())
 }
+
 gulp.task('otf2ttf',function(){
 	return scr([source_folder + '/fonts/*.otf'])
 	.pipe(fonter({
@@ -129,7 +132,7 @@ gulp.task('otf2ttf',function(){
 })
 
 //let build = gulp.series(clean,gulp.parallel(js,css,html,images,fonts)); //product
-let build = gulp.series(gulp.parallel(css,html));//lite-build
+let build = gulp.series(gulp.parallel(js,css,html));//lite-build
 let watch = gulp.parallel(build,watchFiles,browserSync);
 
 exports.images=images;
