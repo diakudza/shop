@@ -17,9 +17,9 @@ let path = {
 		fonts: source_folder + "/fonts/**/*.ttf"
 	},
 	watch: {
-		html: source_folder + "/blocks/**/",
-		css: source_folder + "/sass/**/",
-		js: source_folder  + "/js/**/",
+		html: source_folder + "/blocks/**/*.html",
+		css: source_folder + "/sass/**/*.sass",
+		js: source_folder  + "/js/**/*.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
 	},
 	clean: "./" + project_folder + "/"
@@ -118,8 +118,8 @@ function css(params){
 		//.pipe(webpcss())
 		.pipe(dest(path.build.css))//выгрузка не сжатого
 		.pipe(clean_css())
-		.pipe(rename({extname: ".min.css"}))
-		.pipe(dest(path.build.css))//выгрузка сжатого
+		//.pipe(rename({extname: ".min.css"}))
+		//.pipe(dest(path.build.css))//выгрузка сжатого
 		.pipe(browsersync.stream())
 }
 

@@ -282,7 +282,7 @@ input
     &:hover
         outline: 2px solid $dark-pink
 
-//product
+//product-----------
 
 .product
     margin: 96px 0 0 0
@@ -320,7 +320,6 @@ input
         +tablet-mini
             justify-content: center
 
-
         +mobile
             justify-content: center
 
@@ -330,70 +329,71 @@ input
         width: 360px
         margin-bottom: 40px
 
-    &__card:hover .product__add-cover
-        display: block
+        &:hover .product__card-add
+            display: block
 
-    &__add button:active
-        transform: scale(0.8)
+        &-add button:active
+            transform: scale(0.9) translate(-57%, -50%)
+            
+        &-imgbox
+            position: relative
 
-    &__card-imgbox
-        position: relative
+        &-img
+            margin: 0 0 25px
 
-    &__card-img
-        margin-bottom: 25px
+        &-btnimg
+            background-image: url(../img/header-cart.svg)
+            width: 26px
+            height: 24px
+            background-size: cover
+            margin-right: 11px    
 
-    &__add-cover
-        display: none
+        &-add
+            display: none
+            position: absolute
+            height: 94%
+            width: 100%
+            background: black
+            opacity: 0.7
+            top: 0px
 
-    &__add
-        position: absolute
-        height: 94%
-        width: 100%
-        background: black
-        display: flex
-        justify-content: center
-        align-items: center
-        opacity: 0.7
-        top: 0px
+            & button
+                border: 1px solid #ffF
+                background: transparent
+                color: white
+                display: flex
+                justify-content: center
+                width: 138px
+                height: 43px
+                align-items: center
+                margin: 0 auto
+                top: 50%
+                left: 50%
+                position: absolute
+                transform: translate(-50%, -50%)
 
-    &__add button
-        border: 1px solid #ffF
-        background: transparent
-        color: white
-        display: flex
-        justify-content: center
-        width: 138px
-        height: 43px
-        align-items: center
 
-    &__add-cart
-        background-image: url(../img/header-cart.svg)
-        width: 26px
-        height: 24px
-        background-size: cover
-        margin-right: 11px
+        &-header
+            margin-left: 18px
+            margin-bottom: 13px
+            font-size: 13px
+            line-height: 16px
+            color: #000000
+            text-transform: uppercase
 
-    &__card-header
-        margin-left: 18px
-        margin-bottom: 13px
-        font-size: 13px
-        line-height: 16px
-        color: #000000
-        text-transform: uppercase
+        &-text
+            margin-left: 16.4px
+            margin-bottom: 18px
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #5D5D5D
 
-    &__card-text
-        margin-left: 16.4px
-        margin-bottom: 18px
-        font-weight: 300
-        font-size: 14px
-        line-height: 17px
-        color: #5D5D5D
-
-    &__card-price
-        margin-left: 18px
-        font-size: 16px
-        line-height: 19px
-        color: $dark-pink
+        &-price
+            margin-left: 18px
+            font-size: 16px
+            line-height: 19px
+            color: $dark-pink
 
     &__bottom-wrap
         display: flex
@@ -410,9 +410,13 @@ input
         padding: 14.5px 38.5px 13.5px 38.5px
         text-align: center
 
-    &__button:hover
-        background: $dark-pink
-        color: #FFFFFF
+        &:hover
+            background: $dark-pink
+            color: #FFFFFF
+        &:active
+            background: $dark-pink
+            color: #FFFFFF
+            transform: scale(0.9)
 
 //end product
 
@@ -523,9 +527,11 @@ input
             opacity: 0.67
             font-size: 14px
             line-height: 17px
-
+            transition: 0.5s
             &:hover
                 outline: none
+                background: $white
+
 
         &-button
             font-size: 14px
@@ -539,8 +545,10 @@ input
             display: flex
             align-items: center
             text-align: center
-            border-radius: 0px 24px 24px 0px        
-
+            border-radius: 0px 24px 24px 0px 
+            transition: 0.2s       
+            &:active
+                background: #DC143C
         
 
         &-comment

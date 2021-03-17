@@ -131,28 +131,28 @@ table {
 
 @font-face {
   font-family: "lato";
-  src: url("../fonts/Lato300/Lato-Light.woff") format("woff"), url("../fonts/Lato300/Lato-Light2.woff") format("woff2"), url("../fonts/Lato300/Lato-Light.ttf") format("truetype");
+  src: url("../fonts/lato300/lato-light.woff") format("woff"), url("../fonts/lato300/lato-light2.woff") format("woff2"), url("../fonts/lato300/lato-light.ttf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "lato";
-  src: url("../fonts/Lato400/Lato-Regular.woff") format("woff"), url("../fonts/Lato400/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato400/Lato-Regular.ttf") format("truetype");
+  src: url("../fonts/lato400/lato-regular.woff") format("woff"), url("../fonts/lato400/lato-regular.woff2") format("woff2"), url("../fonts/lato400/lato-regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "lato";
-  src: url("../fonts/Lato700/Lato-Bold.woff") format("woff"), url("../fonts/Lato700/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato700/Lato-Bold.ttf") format("truetype");
+  src: url("../fonts/lato700/lato-bold.woff") format("woff"), url("../fonts/lato700/lato-bold.woff2") format("woff2"), url("../fonts/lato700/lato-bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "lato";
-  src: url("../fonts/Lato900/Lato-Black.woff") format("woff"), url("../fonts/Lato900/Lato-Black.woff2") format("woff2"), url("../fonts/Lato900/Lato-Black.ttf") format("truetype");
+  src: url("../fonts/lato900/lato-black.woff") format("woff"), url("../fonts/lato900/lato-black.woff2") format("woff2"), url("../fonts/lato900/lato-black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
@@ -472,12 +472,12 @@ input:hover {
   margin-bottom: 40px;
 }
 
-.product__card:hover .product__add-cover {
+.product__card:hover .product__card-add {
   display: block;
 }
 
-.product__add button:active {
-  transform: scale(0.8);
+.product__card-add button:active {
+  transform: scale(0.9) translate(-57%, -50%);
 }
 
 .product__card-imgbox {
@@ -485,26 +485,28 @@ input:hover {
 }
 
 .product__card-img {
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 }
 
-.product__add-cover {
+.product__card-btnimg {
+  background-image: url(../img/header-cart.svg);
+  width: 26px;
+  height: 24px;
+  background-size: cover;
+  margin-right: 11px;
+}
+
+.product__card-add {
   display: none;
-}
-
-.product__add {
   position: absolute;
   height: 94%;
   width: 100%;
   background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0.7;
   top: 0px;
 }
 
-.product__add button {
+.product__card-add button {
   border: 1px solid #ffF;
   background: transparent;
   color: white;
@@ -513,14 +515,11 @@ input:hover {
   width: 138px;
   height: 43px;
   align-items: center;
-}
-
-.product__add-cart {
-  background-image: url(../img/header-cart.svg);
-  width: 26px;
-  height: 24px;
-  background-size: cover;
-  margin-right: 11px;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .product__card-header {
@@ -568,6 +567,12 @@ input:hover {
 .product__button:hover {
   background: #F16D7F;
   color: #FFFFFF;
+}
+
+.product__button:active {
+  background: #F16D7F;
+  color: #FFFFFF;
+  transform: scale(0.9);
 }
 
 .advantages {
@@ -647,10 +652,12 @@ input:hover {
   opacity: 0.67;
   font-size: 14px;
   line-height: 17px;
+  transition: 0.5s;
 }
 
 .footer__white-input:hover {
   outline: none;
+  background: #FFF;
 }
 
 .footer__white-button {
@@ -666,6 +673,11 @@ input:hover {
   align-items: center;
   text-align: center;
   border-radius: 0px 24px 24px 0px;
+  transition: 0.2s;
+}
+
+.footer__white-button:active {
+  background: #DC143C;
 }
 
 .footer__white-comment {
