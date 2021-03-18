@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('_head.html', {"title" : "Cart" , "path" : "./css/cart.css" })
+
+<body>
+    @@include('_header.html')
+    <main class="white__back container">
+
+        <div class="cart__header container">
+            <span>shopping cart</span>
+        </div>
+
+        <div class="card__column ">
+            <div class="cart__card">
+                <img class="cart__card-img" height="188" src="./img/product-card3.png">
+                <div>
+                    <h2>mango people t-shirt</h2>
+                    <img class="cart__card-close" src="./img/close.svg">
+                    <p>Price: <span>$300</span></p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl</p>
+                    <p>Quantity: <input type="text" placeholder="2"> </p>
+                </div>
+            </div>
+
+            <div class="cart__card">
+                <img class="cart__card-img" height="188" src="./img/product-card12.png">
+                <div>
+                    <h2>mango people t-shirt</h2>
+                    <img class="cart__card-close" src="./img/close.svg">
+                    <p>Price: <span>$300</span></p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl</p>
+                    <p>Quantity: <input type="text" placeholder="2"> </p>
+                </div>
+            </div>
+            <div class="card__column-btnblock">
+                <button type="button" class="product__button" href="#">clear shopping cart</button>
+                <a class="product__button" href="catalog.html">continue shopping</a>
+            </div>
+        </div>
+
+        <form class="form">
+            <div class="form__text">
+                <h3>SHIPPING ADRESS</h3>
+                <input type="text" placeholder="Bangladesh">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <button type="button" class="product__button form__get">get a quote</button>
+            </div>
+            <div class="form__checkout">
+                <h3>sub total <span>$900</span></h3>
+                <h4>grand total <span>$900</span></h4>
+                <div class="form__checkout-line"></div>
+                <button type="submit" class="product__button button__proceed" type="submit">proceed to checkout</button>
+            </div>
+        </form>
+
+    </main>
+    @@include('_footer.html')
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
