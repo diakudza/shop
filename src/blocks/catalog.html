@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{"title":"Catalog" , "path" : "./css/catalog.css" })
+<body>
+     @@include('_header.html')
+    <main class="white__back container">
+        <section class="catalog__header container">
+            <span class="catalog__header--arrivals">NEW ARRIVALS</span>
+            <nav class="breadcrumbs">
+                <ul>
+                    <li><a href="index.html"> home </a>/</li>
+                    <li><a href="#">men </a>/</li>
+                    <li><a href="#">new arrivals</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="catalog__menu width  container margin">
+            <div class="catalog__filter">
+
+                <div class="./img_filtr">
+                    filter<img src="./img/filter_i.svg">
+                </div>
+
+                <div class="catalog__filter-menu">
+                    <img src="./img/filter_i.svg">
+
+                    <ul>
+                        <li>
+                            <div class="catalog__filter-block">category</div>
+                        </li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Sweaters & Knits</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Tanks</a></li>
+                        <li>
+                            <div class="catalog__filter-block">brand</div>
+                        </li>
+                        <li>
+                            <div class="catalog__filter-block">desinder</div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+            <div class="catalog__menu--size">
+                <div class="catalog__menu--it">trending now<img class="catalog__menu--it" src="./img/down.svg">
+                </div>
+                <div class="catalog__menu--it">size
+                    <ul class="size__menu">
+                        <li><input type="checkbox">xs</li>
+                        <li><input type="checkbox">s</li>
+                        <li><input type="checkbox">m</li>
+                        <li><input type="checkbox">l</li>
+                    </ul>
+                    <img class="catalog__menu--it" src="./img/down.svg">
+                </div>
+
+                <div class="catalog__menu--it">price <img class="catalog__menu--it" src="./img/down.svg"></div>
+            </div>
+        </section>
+        <section class="product__table width container">
+            <h2 class="visually-hidden">product-catalog</h2>
+            <ul class="product__list">
+                
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card1.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card12.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card3.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card4.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card7.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card8.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card9.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card10.png" })
+                    @@include('_product-cart.html', {"pathimg" : "./img/product-card11.png" })
+            </ul>
+        </section>
+
+        <div class="paginator">
+            <div><a href="#"><img src="./img/left.svg"></a></div>
+            <ul class="paginator__list">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li>.....</li>
+                <li>20</li>
+            </ul>
+            <div><a href="#"><img src="./img/right.svg"></a></div>
+        </div>
+
+        @@include('_advantages.html')
+    </main>
+    @@include('_footer.html')
+
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
