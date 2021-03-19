@@ -440,7 +440,7 @@ input
         flex-direction: column
         padding: 48px 0 64px 0
         box-sizing: content-box
-
+        
 
     +mobile
         flex-direction: column
@@ -485,18 +485,52 @@ input
         height: 34px
         color: #FBFBFB
 
+.catalog__menu--size
+    display: flex
+    +font(14px,17px,400)
+
+    &:hover .size__menu
+       display: block
+       
+    +mobile
+        +font(12px,14.4px,400)
+
+.catalog__menu--it
+   font-size: 14px
+   line-height: 17px
+   color: #6F6E6E
+   margin: 0 28px 0 10px
+   text-transform: uppercase
+
+.size__menu
+   width: 79px
+   height: 103px
+   position: absolute
+   z-index: 1
+   background: $white
+   display: none
+   padding: 9.5px 0 0 9.5px
+   box-shadow: 1px 1px 17px 1px #cecece
+
+   & li
+      margin: 0 0 10px 0
+
+   & input
+      margin: 0 9.5px 0 0
+
 .footer
     background-color: #222224
     max-width: 1600px
     margin: 0 auto
-    display:flex
-
+    display: flex
+    flex-direction: column
+    
     &__white
         display: flex
         justify-content: space-around
         background-image: url(../img/photosubscribe.png)
         height: 448px
-
+        width: 100%
         +tablet
             height: 614px
             flex-direction: column

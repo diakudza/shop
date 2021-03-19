@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Product</title>
 
+    
+    <link rel="stylesheet" href="./css/chiefslider.css">
     <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="./css/chiefslider.min.css">
     <script src="./js/chiefslider.js"></script>
     
 </head>
@@ -36,19 +37,19 @@
                             <div class="slider__items">
                                 <div class="slider__item">
                                     <div class="slider__item-container">
-                                        <div class="slider__item-content"><img src="./img/product_main_img.png"
+                                        <div class="slider__item-content"><img class="product__main--img" src="./img/product_main_img.png"
                                                 height="724"></div>
                                     </div>
                                 </div>
                                 <div class="slider__item">
                                     <div class="slider__item-container">
-                                        <div class="slider__item-content"><img src="./img/product_main_img2.jpg"
+                                        <div class="slider__item-content"><img class="product__main--img" src="./img/product_main_img2.jpg"
                                                 height="724"></div>
                                     </div>
                                 </div>
                                 <div class="slider__item">
                                     <div class="slider__item-container">
-                                        <div class="slider__item-content"><img src="./img/product_main_img3.jpg"
+                                        <div class="slider__item-content"><img class="product__main--img" src="./img/product_main_img3.jpg"
                                                 height="724"></div>
                                     </div>
                                 </div>
@@ -76,11 +77,8 @@
                 </p>
                 <h2>$561</h2>
                 <div class="red_line_hor_long"></div>
-                <ul class="catalog__menu">
-                    <li class="catalog__menu--it">choose color<img class="catalog__menu--it" src="./img/down.svg"></li>
-                    <li class="catalog__menu--it">choose sizer<img class="catalog__menu--it" src="./img/down.svg"></li>
-                    <li class="catalog__menu--it">quatity<img class="catalog__menu--it" src="./img/down.svg"></li>
-                </ul>
+               
+                @@include('_catalog__menu.html')
 
                 <button type="button" class="product__button" href="#">
                     <svg width="33" height="29" viewBox="0 0 33 29" xmlns="http://www.w3.org/2000/svg">

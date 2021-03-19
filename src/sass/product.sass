@@ -20,35 +20,26 @@
       font-size: 24px
       line-height: 29px
       color: $dark-pink
-
+   +tablet
+      padding: 0 16px 0 16px
 .slider
    margin: 0 auto
    width: 100%
+   +tablet
+      height: inherit
 .slider__item-content
    display: flex
    justify-content: center
+.slider__container 
+   height: inherit
+
 .menu__vertical-block
    justify-content: flex-end
 
 .menu__vertical-back
    display: none
 
-.catalog__menu
-   display: flex
-   flex-direction: row
-   align-items: center
-   position: relative
-   text-transform: uppercase
-   margin: 0 0 50px
 
-   &--size
-      display: flex
-
-   &--it
-      font-size: 14px
-      line-height: 17px
-      color: $gray
-      margin: 0 28px 0 10px
 
 .breadcrumbs
    font-weight: 300
@@ -83,10 +74,16 @@
       align-items: center
       border: 1px solid #EAEAEA
       width: 1600px
-   &--img
+      +tablet
+         width: 768px
+         height: 624px
+      +tablet-mini
+         width: 768px
+         height: 624px
 
+   &--img
       width: 597px
-      height: 724px
+      height: 100%
 
    &--box
       background-color: #2a2a2a15
@@ -106,11 +103,13 @@
       display: flex
       justify-content: space-between
       flex-direction: column
-      padding-top: 64px
+      padding: 64px 0 65px 0
       align-items: center
-      padding-bottom: 65px
       z-index: 1
-
+      +tablet
+         width: 100%
+      +tablet-mini
+         width: 100%
       & h4
          +font(14px,17px, 300)
          color: $dark-pink
@@ -155,7 +154,8 @@
    flex-direction: row
    align-items: center
    font-size: 16px
-
+   margin: 50px 0 0 0
+   
 .product__button > svg
    fill: $dark-pink
    margin: 0 10px 0 0
@@ -165,5 +165,7 @@
 
 .product__table
    margin: 160px 0 0 0
+.product__list
+
 
 

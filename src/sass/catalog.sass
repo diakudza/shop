@@ -19,14 +19,25 @@
    display: flex
    justify-content: space-between
    align-items: center
-   width: 1141px
+   width: 100%
    height: 148px
    background-color: #F1E4E6
    padding: 0 230px 0 230px
+   box-sizing: border-box;
    &--arrivals
       font-size: 24px
       line-height: 29px
       color: #F16D7F
+
+   +tablet 
+      width: 100%
+      padding: 0 16px 0 16px
+   +tablet-mini 
+       width: 100%
+      padding: 0 16px 0 16px  
+   +mobile 
+      flex-direction: column
+      padding: 24px 0 46px 0
 .breadcrumbs
    font-weight: 300
    font-size: 14px
@@ -48,19 +59,7 @@
    position: relative
    height: 132px
 
-.size__menu
-   width: 79px
-   height: 103px
-   position: absolute
-   z-index: 1
-   background: $white
-   display: none
-   padding: 9.5px 0 0 9.5px
-   box-shadow: 1px 1px 17px 1px #cecece
-   & li
-      margin: 0 0 10px 0
-   & input
-      margin: 0 9.5px 0 0
+
 .catalog__filter
    align-items: center
    width: 360px
@@ -110,20 +109,32 @@
    &-menu a
       text-decoration: none
       display: block
+.img_filtr span
+   +mobile
+      display: none
 .img_filtr img
    margin: 0 0 0 10px
-.catalog__menu--size
-   display: flex
-   &:hover .size__menu
-      display: block
+   +mobile
+      width: 37px
+      height: 25px
 
-.catalog__menu--it
-   font-size: 14px
-   line-height: 17px
-   color: #6F6E6E
-   margin: 0 28px 0 10px
-   text-transform: uppercase
 
+.product__list
+   display: grid
+   gap: 30px
+   grid-template-columns: 1fr 1fr 1fr
+   grid-template-rows: 581px 581px 581px  
+   +tablet 
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 581px 581px 581px 581px
+   & li:last-child
+      +tablet
+         display: none 
+      +mobile
+         display: none 
+   +mobile 
+      grid-template-columns: 1fr  
+      grid-template-rows: repeat(8, 581px)      
 .paginator
 
    margin: 45px 0 96px 0

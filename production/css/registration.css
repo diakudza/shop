@@ -629,10 +629,51 @@ input:hover {
   color: #FBFBFB;
 }
 
+.catalog__menu--size {
+  display: flex;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.catalog__menu--size:hover .size__menu {
+  display: block;
+}
+
+.catalog__menu--it {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin: 0 28px 0 10px;
+  text-transform: uppercase;
+}
+
+.size__menu {
+  width: 79px;
+  height: 103px;
+  position: absolute;
+  z-index: 1;
+  background: #FFF;
+  display: none;
+  padding: 9.5px 0 0 9.5px;
+  box-shadow: 1px 1px 17px 1px #cecece;
+}
+
+.size__menu li {
+  margin: 0 0 10px 0;
+}
+
+.size__menu input {
+  margin: 0 9.5px 0 0;
+}
+
 .footer {
   background-color: #222224;
   max-width: 1600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__white {
@@ -640,6 +681,7 @@ input:hover {
   justify-content: space-around;
   background-image: url(../img/photosubscribe.png);
   height: 448px;
+  width: 100%;
 }
 
 .footer__white-input {
@@ -1003,6 +1045,13 @@ h4 input {
   .advantages {
     flex-direction: column;
     height: 610px;
+  }
+
+  .catalog__menu--size {
+    font-size: 12px;
+    line-height: 14.4px;
+    font-weight: 400;
+    font-style: normal;
   }
 
   .footer__white {
