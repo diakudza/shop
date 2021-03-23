@@ -7,3 +7,7 @@ button.addEventListener('click', function () {
 menuClose.addEventListener('click', function () {
    menuVertical.classList.toggle('display-block');
 });
+let count = document.getElementById('count');
+let itCount = parseInt(count.innerText);
+let productButtons = document.querySelectorAll('.productAddBtn'); 
+productButtons.forEach(button => button.addEventListener('click', () => {count.innerText = ++itCount;}));
