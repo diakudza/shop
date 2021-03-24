@@ -12,7 +12,7 @@ let path = {
 	src: { 
 		html: [source_folder + "/blocks/*.html", "!" + source_folder + "/blocks/_*.html"],
 		css: source_folder + "/sass/*",
-		js: source_folder + "/js/*",
+		js: [source_folder + "/js/*.js", "!" + source_folder + "_*.js"],
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/**/*.ttf"
 	},
@@ -66,7 +66,7 @@ function html(){
 
 function js(){
 	return src(path.src.js)
-		//.pipe(fileinclude())
+		.pipe(fileinclude())
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream())
 }

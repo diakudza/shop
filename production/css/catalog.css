@@ -803,10 +803,11 @@ input:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1141px;
+  width: 100%;
   height: 148px;
   background-color: #F1E4E6;
   padding: 0 230px 0 230px;
+  box-sizing: border-box;
 }
 
 .catalog__header--arrivals {
@@ -871,6 +872,12 @@ input:hover {
   display: inline-block;
 }
 
+.catalog__filter-category,
+.catalog__filter-brand,
+.catalog__filter-desinder {
+  display: none;
+}
+
 .catalog__filter:hover .catalog__filter-menu {
   display: block;
 }
@@ -879,7 +886,7 @@ input:hover {
   padding-left: 34px;
   padding-top: 13px;
   width: 360px;
-  height: 531px;
+  height: auto;
   box-shadow: 1px 1px 17px 1px #cecece;
   background: #ffffff;
   box-sizing: border-box;
@@ -897,11 +904,20 @@ input:hover {
   margin: 0 0 11px 0;
 }
 
-.catalog__filter-menu ul li:not(:nth-child(1)):not(:nth-child(13)):not(:nth-child(14)):hover {
-  border-left: 5px solid #F16D7F;
-  box-sizing: border-box;
-  box-shadow: 1px 1px 1px 0px #cecece;
-  margin: 0 0 11px -5px;
+.catalog__filter-menu ul li ul li {
+  margin: 10px 0 0 0;
+}
+
+.catalog__filter-menu ul li:nth-child(1):hover .catalog__filter-category {
+  display: block;
+}
+
+.catalog__filter-menu ul li:nth-child(2):hover .catalog__filter-brand {
+  display: block;
+}
+
+.catalog__filter-menu ul li:nth-child(3):hover .catalog__filter-desinder {
+  display: block;
 }
 
 .catalog__filter-menu ul a {
@@ -922,6 +938,18 @@ input:hover {
 
 .catalog__filter-menu a {
   text-decoration: none;
+  display: block;
+}
+
+.catalog__filter-category:hover .catalog__filter-menu {
+  display: block;
+}
+
+.catalog__filter-brand:hover .catalog__filter-menu {
+  display: block;
+}
+
+.catalog__filter-desinder:hover .catalog__filter-menu {
   display: block;
 }
 
@@ -1040,6 +1068,12 @@ input:hover {
     flex-direction: column-reverse;
     justify-content: space-around;
   }
+
+  .catalog__header {
+    margin: 0 0 40px 0;
+    padding: 0;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -1090,6 +1124,11 @@ input:hover {
     font-weight: 400;
     font-style: normal;
   }
+
+  .catalog__header {
+    padding: 0 16px 0 16px;
+    margin: 0 0 40px 0;
+  }
 }
 
 @media (max-width: 768px) and (min-width: 375px) {
@@ -1127,5 +1166,10 @@ input:hover {
   .footer__form {
     align-items: center;
     margin: 48px 0 0 0;
+  }
+
+  .catalog__header {
+    padding: 0 16px 0 16px;
+    margin: 0 0 40px 0;
   }
 }

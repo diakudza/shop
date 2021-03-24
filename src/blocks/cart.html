@@ -11,12 +11,12 @@
             <span>shopping cart</span>
         </div>
 
-        <div class="card__column ">
-            <div class="cart__card">
-                <img class="cart__card-img" height="188" src="./img/product-card3.png">
+        <div class="card__column" id="cardColumn">
+            <div class="cart__card" id="cardFirst">
+                <img class="cart__card-img" height="188"  src="./img/product-card3.png">
                 <div>
                     <h2>mango people t-shirt</h2>
-                    <img class="cart__card-close" src="./img/close.svg">
+                    <img class="cart__card-close" id="imgClose" src="./img/close.svg">
                     <p>Price: <span>$300</span></p>
                     <p>Color: Red</p>
                     <p>Size: Xl</p>
@@ -24,11 +24,11 @@
                 </div>
             </div>
 
-            <div class="cart__card">
+            <div class="cart__card" id="cardSecond">
                 <img class="cart__card-img" height="188" src="./img/product-card12.png">
                 <div>
                     <h2>mango people t-shirt</h2>
-                    <img class="cart__card-close" src="./img/close.svg">
+                    <img class="cart__card-close"id="imgClose2" src="./img/close.svg">
                     <p>Price: <span>$300</span></p>
                     <p>Color: Red</p>
                     <p>Size: Xl</p>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="card__column-btnblock">
-                <button type="button" class="product__button" href="#">clear shopping cart</button>
+                <button type="button" class="product__button" id="clearCartBtn" href="#">clear shopping cart</button>
                 <a class="product__button" href="catalog.html">continue shopping</a>
             </div>
         </div>
@@ -46,7 +46,7 @@
                 <h3>SHIPPING ADRESS</h3>
                 <input type="text" placeholder="Bangladesh">
                 <input type="text" placeholder="State">
-                <input type="text" placeholder="Postcode / Zip">
+                <input type="number" placeholder="Postcode / Zip">
                 <button type="button" class="product__button form__get">get a quote</button>
             </div>
             <div class="form__checkout">
