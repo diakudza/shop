@@ -777,7 +777,7 @@ input:hover {
 }
 
 .display-block {
-  display: block;
+  display: block !important;
 }
 
 .white__back {
@@ -878,8 +878,13 @@ input:hover {
   display: none;
 }
 
-.catalog__filter:hover .catalog__filter-menu {
-  display: block;
+.catalog__filter button {
+  border: none;
+  background: #fff;
+}
+
+.catalog__filter button span {
+  margin: 0 10px 0 0;
 }
 
 .catalog__filter-menu {

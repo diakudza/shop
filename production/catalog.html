@@ -19,13 +19,13 @@
 
                 <ul class="menu__btn--group">
                     <li>
-                        <button type="button" class="menu__btn--button" id="menu_btn" title="Menu"></button>
+                        <button type="button" class="menu__btn--button" id="menu_btn" onclick="menuVerticalShow()" title="Menu"></button>
                         <NAV class="menu__vertical" id="menu__vertical">
 
                             <div class="menu__vertical-block">
                                 <div class="menu__vertical-back"></div>
                                 <ul class="menu__vertical-list">
-                                    <div class="menu-close" id="menu-close"></div>
+                                    <div class="menu-close" id="menu-close" onclick="menuVerticalShow()"></div>
                                     <span>menu</span>
                                     <li><span>man</span>
                                         <ul>
@@ -85,13 +85,14 @@
         <section class="catalog__menu width  container margin">
             <div class="catalog__filter">
 
-                <div class="./img_filtr">
-                    filter<img src="./img/filter_i.svg">
-                </div>
+                <button class="./img_filtr" onclick="ctlMenuClose()">
+                    <span>filter</span><img src="./img/filter_i.svg">
+                </button>
 
-                <div class="catalog__filter-menu">
-                    <img src="./img/filter_i.svg">
-
+                <div class="catalog__filter-menu" id="ctlMenu" >
+                    
+                        <img src="./img/filter_i.svg" onclick="ctlMenuClose()">
+                    
                     <ul>
                         <li>
                             <div class="catalog__filter-block catalog__filter-bcat">category</div>
@@ -139,9 +140,6 @@
                         </li>
                         </ul>
                 </div>
-
-
-
             </div>
 
             <div class="catalog__menu--size">

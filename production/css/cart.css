@@ -777,7 +777,7 @@ input:hover {
 }
 
 .display-block {
-  display: block;
+  display: block !important;
 }
 
 .white__back {

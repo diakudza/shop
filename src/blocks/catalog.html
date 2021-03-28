@@ -17,13 +17,14 @@
         <section class="catalog__menu width  container margin">
             <div class="catalog__filter">
 
-                <div class="./img_filtr">
-                    filter<img src="./img/filter_i.svg">
-                </div>
+                <button class="./img_filtr" onclick="ctlMenuClose()">
+                    <span>filter</span><img src="./img/filter_i.svg">
+                </button>
 
-                <div class="catalog__filter-menu">
-                    <img src="./img/filter_i.svg">
-
+                <div class="catalog__filter-menu" id="ctlMenu" >
+                    
+                        <img src="./img/filter_i.svg" onclick="ctlMenuClose()">
+                    
                     <ul>
                         <li>
                             <div class="catalog__filter-block catalog__filter-bcat">category</div>
@@ -71,9 +72,6 @@
                         </li>
                         </ul>
                 </div>
-
-
-
             </div>
 
             <div class="catalog__menu--size">
